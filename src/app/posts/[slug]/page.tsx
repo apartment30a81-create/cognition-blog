@@ -651,6 +651,160 @@ const MOCK_POSTS: Record<string, any> = {
 <h2>Implications for Builders</h2>
 <p>The builders who understand agents now will shape what the agent ecosystem becomes. The opportunity is not just in building agents — it is in building the infrastructure, tools, and patterns that make agents useful and safe at scale.</p>`,
   },
+  'ai-agent-security-risks-2026': {
+    id: '21',
+    title: 'AI Agent Attacks in 2025: What Security Teams Need to Know for 2026',
+    slug: 'ai-agent-security-risks-2026',
+    excerpt: 'As AI agents proliferate, so do attack vectors targeting them. Q4 2025 saw a surge in agent-specific threats — from prompt injection to tool poisoning. Here is what happened and how to defend.',
+    category: 'Engineering',
+    tags: ['Security', 'AI Agents', 'Threats', 'Defense'],
+    cover_image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
+    published: true,
+    created_at: '2025-05-30T09:00:00Z',
+    content: `<p class="lead">Q4 2025 marked a turning point: AI agents moved from demos to production, and attackers noticed. Agent-specific attack patterns emerged at scale — and most organizations were not prepared.</p>
+
+<h2>What Happened</h2>
+<p>Security researchers documented a sharp increase in attacks targeting AI agent pipelines. Unlike traditional software attacks, these exploited the unique properties of agentic systems: tool use, multi-step reasoning, and external data ingestion.</p>
+<p>The three dominant attack vectors:</p>
+<ul>
+  <li><strong>Prompt injection via tool outputs</strong> — poisoned data fed through tools the agent calls (web search results, file reads, API responses) can alter agent behavior without directly compromising the model</li>
+  <li><strong>Tool poisoning</strong> — subtly modifying tool behavior so agents execute actions they would not if they saw the full picture</li>
+  <li><strong>Goal misgeneralization exploitation</strong> — crafting contexts that trigger agent goals in unintended directions, particularly in agents with poorly scoped safety constraints</li>
+</ul>
+
+<h2>Why Traditional Security Fails</h2>
+<p>Agents are probabilistic and stateful. They maintain context across steps, call external tools, and can deviate from expected behavior in ways that traditional security controls (static analysis, input validation) do not catch. A prompt injection attack may only manifest after 15 steps of reasoning — making it invisible to point-in-time scans.</p>
+
+<h2>Defensive Architecture for AI Agents</h2>
+<ul>
+  <li><strong>Output validation layers</strong> — verify agent outputs before actions are executed, especially for destructive operations</li>
+  <li><strong>Tool output sanitization</strong> — treat all tool outputs as untrusted input; scan and normalize before feeding back into agent context</li>
+  <li><strong>Least-privilege tool access</strong> — agents should only call tools they need for the specific task; broad tool access widens the attack surface</li>
+  <li><strong>Human-in-the-loop gates</strong> — for sensitive operations (payments, data deletion, external communications), require explicit human approval at defined checkpoints</li>
+  <li><strong>Agent audit trails</strong> — log every tool call, context state, and decision point so attacks can be reconstructed post-incident</li>
+</ul>
+
+<h2>The Bigger Picture</h2>
+<p>Security for AI agents is a new discipline. It borrows from traditional InfoSec but requires new tooling, new threat models, and new governance frameworks. The teams that build these foundations now — before agents handle critical infrastructure — will have a lasting advantage.</p>`,
+  },
+  'github-copilot-agent-microsoft-build': {
+    id: '22',
+    title: 'Microsoft\'s GitHub AI Agent: The Coding Assistant That Codes for You',
+    slug: 'github-copilot-agent-microsoft-build',
+    excerpt: 'Microsoft shipped an AI agent that doesn\'t just suggest code — it writes, tests, and ships features autonomously. A practical breakdown of what it can do and what it means for developers.',
+    category: 'Engineering',
+    tags: ['Microsoft', 'GitHub', 'AI Agent', 'Coding', 'Development'],
+    cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
+    published: true,
+    created_at: '2025-05-31T10:00:00Z',
+    content: `<p class="lead">GitHub Copilot's new agent mode doesn't suggest code — it owns a feature from spec to deployment. This is not autocomplete with extra steps. This is a different relationship between developer and tool.</p>
+
+<h2>What the Agent Does</h2>
+<p>Given a GitHub issue or a feature description, the agent can: read the existing codebase, understand the context, write the implementation, create tests, run the test suite, and open a PR — without human intervention for the mechanical parts. The developer reviews, approves, and merges.</p>
+<p>This is different from Copilot's traditional mode (line-by-line suggestions) the same way a self-driving car is different from lane-keeping assist.</p>
+
+<h2>How It Works in Practice</h2>
+<p>The agent operates in a sandboxed environment with access to the repository. It plans the implementation, breaks it into subtasks, executes each step, handles errors, and iterates. When it encounters ambiguity, it makes a judgment call — or flags it for human review. The entire workflow is tracked: every decision, every file changed, every test result.</p>
+
+<h2>The Developer Experience Shift</h2>
+<p>The role of the developer changes. Instead of writing code line by line, you become the architect, reviewer, and quality gate. You define what "done" looks like, and the agent figures out how to get there.</p>
+<p>This is not about replacing developers. It is about moving developers up the stack — from implementation to specification, from code writing to code review, from problem-solving to problem-framing.</p>
+
+<h2>What Teams Are Reporting</h2>
+<p>Early users report that the agent handles routine feature development well — CRUD operations, API integration, test coverage. It struggles with ambiguous requirements, complex architectural decisions, and edge cases that require real-world system knowledge. The best results come from developers who write clear specs and review carefully.</p>
+
+<h2>What This Means for Hiring</h2>
+<p>The implication is not fewer developers — it is different developers. The value shifts to people who can specify clearly, evaluate quality, and make architectural decisions. Junior developers writing boilerplate code face more pressure. Senior developers who can direct and review autonomous agents become more valuable.</p>`,
+  },
+  'vertical-ai-agents-industry-transformation': {
+    id: '23',
+    title: 'Vertical AI Agents: How Industry-Specific Agents Are Outperforming General-Purpose Systems',
+    slug: 'vertical-ai-agents-industry-transformation',
+    excerpt: 'Horizontal AI agents serve many industries poorly. Vertical agents — built for healthcare, legal, finance, logistics — are achieving 10x better results by understanding domain context deeply.',
+    category: 'Vision',
+    tags: ['Vertical AI', 'AI Agents', 'Industry', 'Healthcare', 'Finance'],
+    cover_image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
+    published: true,
+    created_at: '2025-06-01T09:00:00Z',
+    content: `<p class="lead">A general-purpose agent asked to analyze a medical chart or review a supply chain contract starts cold. A vertical agent trained on thousands of medical charts or contracts starts with domain intuition. That head start compounds.</p>
+
+<h2>Why Horizontal Agents Struggle in Specialized Domains</h2>
+<p>General-purpose agents are trained on broad data and optimized for general reasoning. When they encounter domain-specific tasks — interpreting radiology images, analyzing insurance claims, optimizing warehouse logistics — they lack the mental models that specialists spend years building.</p>
+<p>A legal agent that does not understand contract law cannot meaningfully review a lease. A healthcare agent that does not understand clinical workflows cannot meaningfully triage patient data. The task is not just about language understanding — it is about domain reasoning.</p>
+
+<h2>What Vertical Agents Do Differently</h2>
+<p>Vertical agents are fine-tuned or built on domain-specific data, trained on industry-specific workflows, and often integrated with industry-specific tools (EHR systems, legal databases, logistics platforms). They reason with domain context — not just text.</p>
+<p>The result: accuracy rates 30-60% higher than general-purpose agents on domain-specific benchmarks, response times 3-5x faster due to domain-specific optimization, and far fewer hallucinated outputs on specialized topics.</p>
+
+<h2>Industries Where Vertical Agents Are Winning</h2>
+<p><strong>Legal:</strong> Contract review, discovery document analysis, regulatory compliance checking. Firms report 70%+ reduction in manual document review time.</p>
+<p><strong>Healthcare:</strong> Clinical documentation, patient triage, drug interaction checking. The constraint is regulatory — healthcare data is heavily protected, so on-premise or private-cloud deployment is often required.</p>
+<p><strong>Finance:</strong> Fraud detection, algorithmic trading, credit risk assessment. Real-time requirements and regulatory oversight drive adoption.</p>
+<p><strong>Logistics:</strong> Supply chain optimization, demand forecasting, fleet management. The volume and complexity of decisions make this a natural fit for agentic automation.</p>
+
+<h2>The Business Model Shift</h2>
+<p>Vertical AI is a B2B SaaS model on top of an agentic layer. You build the agent, sell subscriptions to the industry, and continuously improve it with industry data. The competitive moat is proprietary data and domain expertise — not the underlying model.</p>`,
+  },
+  'ai-agents-customer-experience-revolution': {
+    id: '24',
+    title: 'How AI Agents Are Opening the Golden Era of Customer Experience',
+    slug: 'ai-agents-customer-experience-revolution',
+    excerpt: 'AI agents are transforming customer service from scripted chatbots to intelligent, context-aware conversations. BCG research shows agents delivering 40% higher satisfaction scores than traditional automation.',
+    category: 'Vision',
+    tags: ['Customer Experience', 'AI Agents', 'CX', 'BCG'],
+    cover_image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+    published: true,
+    created_at: '2025-06-02T10:00:00Z',
+    content: `<p class="lead">For decades, customer service automation meant frustrating phone trees and scripted chatbots that could not deviate from their flowchart. AI agents change that fundamentally — and the results are measurable.</p>
+
+<h2>The Old Model vs. The Agent Model</h2>
+<p>Traditional automation follows a decision tree: if X, do Y. It fails the moment a customer situation deviates from the expected path. AI agents follow intent: they understand what the customer is trying to accomplish, they know the context (purchase history, prior tickets, product usage), and they reason about the best path to resolution.</p>
+<p>This is not the same as a smarter chatbot. Chatbots still follow scripts. Agents think.</p>
+
+<h2>What the Research Shows</h2>
+<p>Boston Consulting Group found that AI agent-powered customer service delivered 40% higher customer satisfaction scores than traditional automation — while reducing resolution time by 60%. The combination of faster resolution and better experience is rare in service industry improvements.</p>
+<p>The key insight: agents handle complexity that previously required human agents. Complex returns, multi-step troubleshooting, account changes with exceptions — these are where traditional automation failed and human agents were overwhelmed. Agents close that gap.</p>
+
+<h2>What Companies Are Actually Building</h2>
+<p>Leading companies deploy agents for:</p>
+<ul>
+  <li><strong>Intent detection and routing</strong> — agents understand what the customer needs and route to the right resource (agent, specialist, or another agent)</li>
+  <li><strong>Proactive resolution</strong> — agents identify problems before customers report them (a shipping delay detected, a refund processed before the customer asks)</li>
+  <li><strong>Personalized troubleshooting</strong> — agents guide customers through solutions specific to their situation, product version, and history</li>
+  <li><strong>Seamless handoffs</strong> — when a situation requires a human, the agent summarizes the full context so the customer does not repeat themselves</li>
+</ul>
+
+<h2>The CX Bottom Line</h2>
+<p>The business case is clear: agents reduce cost-to-serve while improving satisfaction scores. But the deeper opportunity is NPS improvement through proactive, personalized service — the kind that used to require dedicated account managers for enterprise clients, now possible at scale for every customer.</p>`,
+  },
+  'ai-agents-2025-year-in-review': {
+    id: '25',
+    title: '2025 Was the Year of AI Agents: What Actually Happened and What Failed',
+    slug: 'ai-agents-2025-year-in-review',
+    excerpt: 'Fortune called it "the year of agentic AI." Deloitte called it "a story as old as time." Both are right. A clear-eyed look at what agentic AI actually delivered in 2025 and where it fell short.',
+    category: 'Vision',
+    tags: ['AI Agents', '2025', 'Year Review', 'Agentic AI'],
+    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    published: true,
+    created_at: '2025-06-03T11:00:00Z',
+    content: `<p class="lead">By almost every measure, 2025 was supposed to be the year AI agents transformed how businesses operate. The results were more complicated.</p>
+
+<h2>What Actually Worked</h2>
+<p><strong>Coding agents went mainstream.</strong> GitHub Copilot agent mode, Cursor, and Claude Code demonstrated that autonomous coding agents could handle real production tasks — not just demos. Engineering teams using these tools reported 30-50% productivity gains on routine feature development. This is the clearest success story of the year.</p>
+<p><strong>Research and synthesis agents found product-market fit.</strong> Agents that could search, read, extract, and summarize from large document corpora found real users. Legal teams, research organizations, and financial analysts adopted these tools faster than expected.</p>
+<p><strong>Customer service agents improved measurably.</strong> BCG data shows 40% satisfaction improvement over traditional automation. Companies with high-volume support operations saw clear ROI.</p>
+
+<h2>What Failed to Deliver</h2>
+<p><strong>Autonomous business agents stumbled.</strong> Agents meant to autonomously handle business workflows — scheduling, email management, calendar coordination — underperformed expectations. The problem: real business tasks involve more ambiguity, exception handling, and social context than controlled demos.</p>
+<p><strong>Agent security caught everyone off guard.</strong> Q4 2025 saw a surge in agent-specific attack vectors that most organizations had not prepared for. Tool poisoning, prompt injection through tool outputs, and goal misgeneralization exploitation were not hypothetical — they were happening in production.</p>
+<p><strong>The "agent replacing jobs" narrative overcorrected.</strong> The dramatic predictions (millions of knowledge workers replaced by agents) did not materialize in 2025. Agents automated specific tasks within jobs — not entire roles. The displacement, while real, was more nuanced than the headlines suggested.</p>
+
+<h2>The Honest Assessment</h2>
+<p>Agentic AI made real progress in 2025. It is not a bubble — the productivity gains in specific domains are genuine. But the hype cycle peaked above the reality. The agents that work are narrowly focused, carefully implemented, and human-supervised. The vision of fully autonomous agents handling complex business processes without oversight is still years away.</p>
+
+<h2>What 2026 Looks Like</h2>
+<p>The next wave is not bigger agents — it is better guardrails. Security tooling for agents, evaluation frameworks for agent reliability, and governance models for agent deployment will define the next phase. The agents are ready. The infrastructure around them is not.</p>`,
+  },
 }
 
 interface PageProps {
