@@ -1,117 +1,15 @@
      1|'use client'
      2|
-     3|import { use },
-  {
-    id: '26',
-    title: "The Dawn of Next-Gen Reasoning Models in 2026",
-    slug: 'next-gen-reasoning-models-2026',
-    excerpt: "How the latest reasoning-focused models are solving complex math, coding, and logical tasks without hallucinations.",
-    cover_image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800&q=80',
-    category: 'Language',
-    tags: ['Reasoning', 'LLM', 'Innovation', 'AI Models'],
-    published: true,
-    created_at: '2026-05-10T12:00:00Z',
-    content: `
-      <p><em>How the latest reasoning-focused models are solving complex math, coding, and logical tasks without hallucinations.</em></p>
-      <h2>The Shift from Pattern Matching to Reasoning</h2>
-      <p>Throughout 2024 and 2025, the industry focus was largely on context window sizes and parameter counts. However, 2026 has unequivocally become the year of <strong>reasoning models</strong>. Unlike traditional LLMs that rely heavily on statistical pattern matching, these new architectures integrate structured logic pathways and symbolic solvers directly into their generation loops.</p>
-      
-      <h2>Why It Matters for Enterprise</h2>
-      <p>The reduction in hallucinations isn't just a marginal improvement; it crosses a critical threshold for enterprise deployment. Sectors like legal, medical, and highly regulated finance are finally adopting these models for core operations rather than just peripheral summarization tasks. The ability of the model to "think aloud" and self-correct before outputting a final answer is revolutionizing zero-shot accuracy.</p>
-      
-      <h2>The Benchmark Evolution</h2>
-      <p>Old benchmarks like MMLU are practically saturated. We are now measuring models against competitive programming platforms and post-graduate level mathematics, where the new reasoning engines are scoring well above human expert baselines.</p>
-    `,
-  },
-  {
-    id: '27',
-    title: "On-Device AI: Running 100B Parameter Models Locally",
-    slug: 'on-device-ai-100b-parameters-locally',
-    excerpt: "Advances in quantization and edge silicon mean true state-of-the-art AI no longer requires a cloud API.",
-    cover_image: 'https://images.unsplash.com/photo-1509099345956-6210f925fab8?w=800&q=80',
-    category: 'Engineering',
-    tags: ['Edge AI', 'Hardware', 'Quantization', 'Privacy'],
-    published: true,
-    created_at: '2026-05-10T12:00:00Z',
-    content: `
-      <p><em>Advances in quantization and edge silicon mean true state-of-the-art AI no longer requires a cloud API.</em></p>
-      <h2>The Death of the API Dependency?</h2>
-      <p>For years, deploying a truly capable LLM meant tethering your application to a massive hyperscaler's API. In 2026, the paradigm is shifting violently towards the edge. Thanks to extreme quantization techniques (like 1.5-bit and ternary weights) coupled with powerful new neural processing units (NPUs) in consumer hardware, running a 100B+ parameter model locally is now a reality.</p>
-      
-      <h2>Privacy as a Default</h2>
-      <p>This hardware shift fundamentally alters the privacy conversation. Enterprises can now deploy powerful autonomous agents on corporate laptops without a single byte of sensitive data ever traversing the public internet. This localized approach is unblocking AI adoption in healthcare and defense.</p>
-      
-      <h2>The Latency Advantage</h2>
-      <p>Beyond privacy, the latency benefits are profound. Voice-to-voice models running locally provide sub-100ms response times, creating conversational interfaces that finally feel entirely natural and un-robotic.</p>
-    `,
-  },
-  {
-    id: '28',
-    title: "Agentic Engineering Teams: When AI Writes and Reviews",
-    slug: 'agentic-engineering-teams-ai-reviews',
-    excerpt: "Software engineering is transitioning from writing code to managing fleets of specialized AI developer agents.",
-    cover_image: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=800&q=80',
-    category: 'Engineering',
-    tags: ['AI Agents', 'Software Engineering', 'Automation', 'DevOps'],
-    published: true,
-    created_at: '2026-05-10T12:00:00Z',
-    content: `
-      <p><em>Software engineering is transitioning from writing code to managing fleets of specialized AI developer agents.</em></p>
-      <h2>The New Developer Workflow</h2>
-      <p>The era of the "AI coding assistant" autocomplete is dead. Welcome to the era of the <strong>Agentic Engineering Team</strong>. Modern development in 2026 is characterized by assigning high-level JIRA tickets directly to AI agents. These agents clone the repo, read the documentation, plan the architecture, write the code, and submit Pull Requests.</p>
-      
-      <h2>Agent-to-Agent Code Review</h2>
-      <p>Perhaps the most fascinating development is the automated review cycle. We now see instances where an 'Implementer Agent' submits a PR, which is systematically torn down and critiqued by a 'Security & Performance Agent'. The code iterates several times before a human principal engineer ever sets eyes on it.</p>
-      
-      <h2>The Human Bottleneck</h2>
-      <p>The primary challenge engineering managers face today isn't writing software; it's defining precise, unambiguous specifications. When execution is practically free and instant, clarity of thought and architectural vision become the most highly valued human skills.</p>
-    `,
-  },
-  {
-    id: '29',
-    title: "The 2026 EU AI Act Fallout: Regulatory Reality",
-    slug: 'eu-ai-act-fallout-2026-compliance',
-    excerpt: "As the EU AI Act enforcement phases in, we examine how open-source and proprietary labs are navigating the legal maze.",
-    cover_image: 'https://images.unsplash.com/photo-1523961131990-521072f16ee9?w=800&q=80',
-    category: 'Ethics',
-    tags: ['Regulation', 'EU AI Act', 'Policy', 'Open Source'],
-    published: true,
-    created_at: '2026-05-10T12:00:00Z',
-    content: `
-      <p><em>As the EU AI Act enforcement phases in, we examine how open-source and proprietary labs are navigating the legal maze.</em></p>
-      <h2>The Compliance Squeeze</h2>
-      <p>With the implementation of the EU AI Act hitting full stride in 2026, the theoretical discussions of AI ethics have become hard, actionable compliance burdens. "High-risk" AI systems—which now broadly legally encompass enterprise HR screening, critical infrastructure management, and medical diagnostics—require extensive documentation and ongoing auditing.</p>
-      
-      <h2>The Open Source Loophole (or Trap?)</h2>
-      <p>Open-source models have found themselves in a bizarre regulatory gray area. While basic foundational models enjoy some exemptions, downstream commercial deployers of these models take on massive liability. We are seeing a new sub-industry of "Compliance-as-a-Service" infrastructure popping up simply to sanitize and certify open-source weights for corporate use.</p>
-      
-      <h2>Global Fragmentation</h2>
-      <p>The stark difference between the aggressive European regulatory stance and the relatively laissez-faire approach in the US and Asia is causing a "splinternet" of AI models. Geofenced features are now standard, and global deployments of AI agents require dynamic regulatory routing to remain legal.</p>
-    `,
-  },
-  {
-    id: '30',
-    title: "Quantum Machine Learning: The First Practical Hybrids",
-    slug: 'quantum-machine-learning-practical-hybrids',
-    excerpt: "Quantum computing and neural networks are finally merging to solve protein folding and complex logistics.",
-    cover_image: 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&q=80',
-    category: 'Vision',
-    tags: ['Quantum', 'Research', 'Hybrid Models', 'Future'],
-    published: true,
-    created_at: '2026-05-10T12:00:00Z',
-    content: `
-      <p><em>Quantum computing and neural networks are finally merging to solve protein folding and complex logistics.</em></p>
-      <h2>Beyond the Hype Cycle</h2>
-      <p>For decades, Quantum Machine Learning (QML) was purely theoretical. As of 2026, the narrative has shifted to practical hybrid models. By combining classical neural network architectures for pre-processing with quantum processing units (QPUs) for high-dimensional optimization kernels, we are seeing real-world speedups.</p>
-      
-      <h2>Material Science Breakthroughs</h2>
-      <p>The most immediate and staggering impact is in material science and bioinformatics. Hybrid QML agents are simulating protein interactions and novel battery materials at a fidelity that traditional silicon simply cannot achieve, bypassing the limitations of classical approximation algorithms.</p>
-      
-      <h2>Integration with Existing LLMs</h2>
-      <p>Current architecture trends show LLMs acting as the orchestration layer: translating human requests into quantum circuits, running the simulation on the QPU, and translating the raw quantum state outputs back into actionable human-readable insights. It is the ultimate synthesis of language understanding and raw computational physics.</p>
-    `,
-  }
-],
+     3|import { use } from 'react'
+     4|
+     5|const MOCK_POSTS: Record<string, any> = {
+     6|  'autonomous-ai-agents-claude-code': {
+     7|    id: '1',
+     8|    title: 'Building Autonomous AI Agents with Claude Code',
+     9|    slug: 'autonomous-ai-agents-claude-code',
+    10|    excerpt: 'A deep dive into orchestrating multi-agent systems that can plan, reason, and execute complex tasks with minimal human intervention.',
+    11|    category: 'Engineering',
+    12|    tags: ['AI Agents', 'Claude', 'Autonomy', 'LLM'],
     13|    cover_image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
     14|    published: true,
     15|    created_at: '2026-05-01T10:00:00Z',
@@ -599,5 +497,111 @@
    497|</ul>
    498|
    499|<h2>Hermes Subagent API</h2>
-   500|<p>Hermes supports spawning subagents directly via the delegate_task tool. Specify the goal, context, and available toolsets. Subagents run in isolated contexts and return results to the parent.</p>
+   500|<p>Hermes supports spawning subagents directly via the delegate_task tool. Specify the goal, context,,
+  'next-gen-reasoning-models-2026': {
+    id: '26',
+    title: "The Dawn of Next-Gen Reasoning Models in 2026",
+    slug: 'next-gen-reasoning-models-2026',
+    excerpt: "How the latest reasoning-focused models are solving complex math, coding, and logical tasks without hallucinations.",
+    cover_image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800&q=80',
+    category: 'Language',
+    tags: ['Reasoning', 'LLM', 'Innovation', 'AI Models'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p><em>How the latest reasoning-focused models are solving complex math, coding, and logical tasks without hallucinations.</em></p>
+
+<h2>The Shift from Pattern Matching to Reasoning</h2>
+<p>Throughout 2024 and 2025, the industry focus was largely on context window sizes and parameter counts. However, 2026 has unequivocally become the year of <strong>reasoning models</strong>. Unlike traditional LLMs that rely heavily on statistical pattern matching, these new architectures integrate structured logic pathways and symbolic solvers directly into their generation loops.</p>
+
+<h2>Why It Matters for Enterprise</h2>
+<p>The reduction in hallucinations is not just a marginal improvement; it crosses a critical threshold for enterprise deployment. Sectors like legal, medical, and highly regulated finance are finally adopting these models for core operations rather than just peripheral summarization tasks.</p>
+
+<h2>The Benchmark Evolution</h2>
+<p>Old benchmarks like MMLU are practically saturated. We are now measuring models against competitive programming platforms and post-graduate level mathematics, where the new reasoning engines are scoring well above human expert baselines.</p>`
+  },
+  'on-device-ai-100b-parameters-locally': {
+    id: '27',
+    title: "On-Device AI: Running 100B Parameter Models Locally",
+    slug: 'on-device-ai-100b-parameters-locally',
+    excerpt: "Advances in quantization and edge silicon mean true state-of-the-art AI no longer requires a cloud API.",
+    cover_image: 'https://images.unsplash.com/photo-1509099345956-6210f925fab8?w=800&q=80',
+    category: 'Engineering',
+    tags: ['Edge AI', 'Hardware', 'Quantization', 'Privacy'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p><em>Advances in quantization and edge silicon mean true state-of-the-art AI no longer requires a cloud API.</em></p>
+
+<h2>The Death of the API Dependency</h2>
+<p>For years, deploying a truly capable LLM meant tethering your application to a massive hyperscaler API. In 2026, the paradigm is shifting violently towards the edge. Thanks to extreme quantization techniques coupled with powerful NPUs, running a 100B+ parameter model locally is now a reality.</p>
+
+<h2>Privacy as a Default</h2>
+<p>Enterprises can now deploy powerful autonomous agents on corporate laptops without a single byte of sensitive data ever traversing the public internet. This localized approach is unblocking AI adoption in healthcare and defense.</p>
+
+<h2>The Latency Advantage</h2>
+<p>Voice-to-voice models running locally provide sub-100ms response times, creating conversational interfaces that finally feel entirely natural.</p>`
+  },
+  'agentic-engineering-teams-ai-reviews': {
+    id: '28',
+    title: "Agentic Engineering Teams: When AI Writes and Reviews",
+    slug: 'agentic-engineering-teams-ai-reviews',
+    excerpt: "Software engineering is transitioning from writing code to managing fleets of specialized AI developer agents.",
+    cover_image: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=800&q=80',
+    category: 'Engineering',
+    tags: ['AI Agents', 'Software Engineering', 'Automation', 'DevOps'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p><em>Software engineering is transitioning from writing code to managing fleets of specialized AI developer agents.</em></p>
+
+<h2>The New Developer Workflow</h2>
+<p>The era of the AI coding assistant autocomplete is dead. Welcome to the era of the <strong>Agentic Engineering Team</strong>. Modern development in 2026 is characterized by assigning high-level JIRA tickets directly to AI agents. These agents clone the repo, read the documentation, plan the architecture, write the code, and submit Pull Requests.</p>
+
+<h2>Agent-to-Agent Code Review</h2>
+<p>An Implementer Agent submits a PR, which is systematically torn down and critiqued by a Security and Performance Agent. The code iterates several times before a human principal engineer ever sets eyes on it.</p>
+
+<h2>The Human Bottleneck</h2>
+<p>Clarity of thought and architectural vision become the most highly valued human skills when execution is practically free and instant.</p>`
+  },
+  'eu-ai-act-fallout-2026-compliance': {
+    id: '29',
+    title: "The 2026 EU AI Act Fallout: Regulatory Reality",
+    slug: 'eu-ai-act-fallout-2026-compliance',
+    excerpt: "As the EU AI Act enforcement phases in, we examine how open-source and proprietary labs are navigating the legal maze.",
+    cover_image: 'https://images.unsplash.com/photo-1523961131990-521072f16ee9?w=800&q=80',
+    category: 'Ethics',
+    tags: ['Regulation', 'EU AI Act', 'Policy', 'Open Source'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p><em>As the EU AI Act enforcement phases in, we examine how open-source and proprietary labs are navigating the legal maze.</em></p>
+
+<h2>The Compliance Squeeze</h2>
+<p>With the implementation of the EU AI Act hitting full stride in 2026, high-risk AI systems which now broadly encompass enterprise HR screening, critical infrastructure management, and medical diagnostics require extensive documentation and ongoing auditing.</p>
+
+<h2>The Open Source Loophole</h2>
+<p>Open-source models have found themselves in a bizarre regulatory gray area. While basic foundational models enjoy some exemptions, downstream commercial deployers take on massive liability.</p>
+
+<h2>Global Fragmentation</h2>
+<p>The stark difference between the aggressive European regulatory stance and the relatively laissez-faire approach in the US and Asia is causing a splinternet of AI models.</p>`
+  },
+  'quantum-machine-learning-practical-hybrids': {
+    id: '30',
+    title: "Quantum Machine Learning: The First Practical Hybrids",
+    slug: 'quantum-machine-learning-practical-hybrids',
+    excerpt: "Quantum computing and neural networks are finally merging to solve protein folding and complex logistics.",
+    cover_image: 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&q=80',
+    category: 'Vision',
+    tags: ['Quantum', 'Research', 'Hybrid Models', 'Future'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p><em>Quantum computing and neural networks are finally merging to solve protein folding and complex logistics.</em></p>
+
+<h2>Beyond the Hype Cycle</h2>
+<p>As of 2026, the narrative has shifted to practical hybrid models. By combining classical neural network architectures for pre-processing with quantum processing units (QPUs) for high-dimensional optimization kernels, we are seeing real-world speedups.</p>
+
+<h2>Material Science Breakthroughs</h2>
+<p>Hybrid QML agents are simulating protein interactions and novel battery materials at a fidelity that traditional silicon simply cannot achieve.</p>
+
+<h2>Integration with Existing LLMs</h2>
+<p>Current architecture trends show LLMs acting as the orchestration layer: translating human requests into quantum circuits, running the simulation on the QPU, and translating the raw quantum state outputs back into actionable human-readable insights.</p>`
+  },
+ and available toolsets. Subagents run in isolated contexts and return results to the parent.</p>
    501|
