@@ -333,6 +333,324 @@ const MOCK_POSTS: Record<string, any> = {
 <h2>The Prediction</h2>
 <p>Developers who understand AI will replace developers who don't. Not because AI writes code, but because AI-augmented developers can do everything non-augmented developers can do — plus more. The question isn't whether AI changes development. It's whether you change with it.</p>`,
   },
+  'hermes-agent-practical-guide': {
+    id: '11',
+    title: 'Getting Started with Hermes Agent: A Complete Practical Guide',
+    slug: 'hermes-agent-practical-guide',
+    excerpt: 'Hermes Agent is a powerful AI assistant that can plan, reason, and execute tasks autonomously. Here is how to get the most out of it.',
+    category: 'Engineering',
+    tags: ['Hermes', 'Agent', 'Tutorial', 'AI'],
+    cover_image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
+    published: true,
+    created_at: '2025-05-20T09:00:00Z',
+    content: `<p class="lead">Hermes Agent is not just another chatbot. It is an autonomous agent that can plan, delegate, search the web, write code, and execute multi-step workflows — all from a single prompt.</p>
+
+<h2>What Makes Hermes Different</h2>
+<p>Unlike simple text generators, Hermes is built for agency. It maintains memory across sessions, can spawn subagents for parallel work, integrates with tools like GitHub, Vercel, Telegram, and the browser. It is designed to be your AI teammate, not just an answering machine.</p>
+
+<h2>Core Concepts</h2>
+<ul>
+  <li><strong>Tasks and Goals</strong> — Give Hermes a goal and it breaks it down, delegates, and coordinates</li>
+  <li><strong>Skills</strong> — Modular instruction sets that extend Hermes's capabilities</li>
+  <li><strong>Memory</strong> — Persistent context across sessions so it remembers your projects</li>
+  <li><strong>Delegation</strong> — Spawn subagents to handle independent subtasks in parallel</li>
+  <li><strong>Tools</strong> — Web search, terminal, file system, GitHub, Vercel, Telegram, and more</li>
+</ul>
+
+<h2>A Simple Workflow</h2>
+<p>Start with a clear, specific goal. "Build and deploy a Next.js blog to Vercel" is better than "make me a website." Hermes will ask clarifying questions, plan the steps, execute them, and report back. For complex tasks, it can spawn multiple subagents to work simultaneously.</p>
+
+<h2>Best Practices</h2>
+<ul>
+  <li>Be specific about the desired outcome, not the process</li>
+  <li>Leverage skills for specialized tasks (code review, research, design)</li>
+  <li>Use memory to teach Hermes about your preferences and projects</li>
+  <li>Review agent work — trust but verify for critical tasks</li>
+</ul>
+
+<h2>What to Try First</h2>
+<p>Start with something bounded: "Search for the latest news on AI agents and summarize the top 3 stories." Then scale up to multi-step tasks. The more you use it, the better you understand how to phrase requests for optimal results.</p>`,
+  },
+  'hermes-vs-claude-ai-assistants': {
+    id: '12',
+    title: 'Hermes Agent vs Claude: Comparing AI Assistants in 2025',
+    slug: 'hermes-vs-claude-ai-assistants',
+    excerpt: 'Two powerful AI systems, two different philosophies. We break down capabilities, use cases, and which one to reach for first.',
+    category: 'Vision',
+    tags: ['Hermes', 'Claude', 'Comparison', 'AI'],
+    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    published: true,
+    created_at: '2025-05-21T10:00:00Z',
+    content: `<p class="lead">Both Hermes and Claude are capable AI assistants. But they are built for different purposes, and understanding those differences is the key to using both effectively.</p>
+
+<h2>Hermes: The Agent-First System</h2>
+<p>Hermes is designed as an autonomous agent. It can plan multi-step workflows, delegate to subagents, execute code, manage files, and interact with external services. It is built for people who want an AI teammate that can handle complex, real-world tasks with minimal hand-holding.</p>
+<p>Hermes excels at: end-to-end project execution, research synthesis, automation pipelines, and integration work across multiple platforms and services.</p>
+
+<h2>Claude: The Reasoning Specialist</h2>
+<p>Claude from Anthropic is a frontier language model optimized for deep reasoning, nuanced analysis, and thoughtful response generation. It excels at tasks that require careful consideration — legal analysis, complex code architecture, creative writing, and philosophical exploration.</p>
+<p>Claude's strengths: conversation depth, ethical reasoning, safety alignment, and the ability to engage with ambiguous, multi-faceted questions.</p>
+
+<h2>How to Use Both</h2>
+<p>Think of Claude as your thinking partner for complex reasoning tasks, and Hermes as your execution partner for getting things done. Use Claude when you need to work through a hard problem. Use Hermes when you have a clear goal and need someone (something?) to drive toward it.</p>
+<p>The most productive power users switch between both: Claude for analysis and planning, Hermes for execution and automation.</p>
+
+<h2>The Honest Take</h2>
+<p>Hermes is newer and the ecosystem is still evolving. Claude has years of research behind it and a proven safety record. Neither is universally better — they complement each other. If you only had to pick one, the choice depends on whether you need a thinker or a doer.</p>`,
+  },
+  'building-custom-agents-hermes': {
+    id: '13',
+    title: 'Building Custom Agents with Hermes: Skills and Toolchains',
+    slug: 'building-custom-agents-hermes',
+    excerpt: 'Hermes skills let you teach it specialized knowledge and workflows. A guide to authoring, testing, and deploying custom agent behaviors.',
+    category: 'Engineering',
+    tags: ['Hermes', 'Agents', 'Skills', 'Development'],
+    cover_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+    published: true,
+    created_at: '2025-05-22T09:00:00Z',
+    content: `<p class="lead">Hermes is extensible. Skills are modular instruction sets that add specialized capabilities — from domain knowledge to custom workflows to integrations with proprietary tools.</p>
+
+<h2>What Is a Skill?</h2>
+<p>A skill is a markdown file with YAML frontmatter that defines: when to use the skill, what steps to follow, what tools are available, and how to verify success. Skills can reference scripts, templates, and external resources.</p>
+<p>Skills live in the ~/.hermes/skills/ directory. Hermes loads them on startup and uses them contextually based on the task at hand.</p>
+
+<h2>Skill Anatomy</h2>
+<ul>
+  <li><strong>Trigger</strong> — conditions that activate the skill (task keywords, context patterns)</li>
+  <li><strong>Steps</strong> — numbered instructions the agent follows</li>
+  <li><strong>Tools</strong> — specific toolsets enabled for this skill (terminal, file, web, etc.)</li>
+  <li><strong>Verification</strong> — how to confirm the skill worked correctly</li>
+  <li><strong>Pitfalls</strong> — common mistakes to avoid</li>
+</ul>
+
+<h2>Creating Your First Skill</h2>
+<p>Start by identifying a recurring task with a clear pattern. Writing a skill forces you to be explicit about the process — which often reveals improvements to the workflow itself. The skill file becomes both documentation and executable behavior.</p>
+
+<h2>Real-World Examples</h2>
+<ul>
+  <li>A "code-review" skill that knows your team's standards and applies them automatically</li>
+  <li>A "research" skill that follows a specific methodology for gathering and synthesizing information</li>
+  <li>A "deployment" skill that packages, pushes, and verifies a release end-to-end</li>
+</ul>
+
+<h2>Sharing Skills</h2>
+<p>Skills can be published and shared. The Hermes ecosystem includes community skills for common tasks. Start with existing skills, adapt them, and contribute back when you build something useful for others.</p>`,
+  },
+  'hermes-api-integration-guide': {
+    id: '14',
+    title: 'Hermes API: Integrating AI Agents into Your Applications',
+    slug: 'hermes-api-integration-guide',
+    excerpt: 'The Hermes API lets you embed autonomous agent capabilities into any product. A practical guide to authentication, endpoints, and real-world patterns.',
+    category: 'Engineering',
+    tags: ['Hermes', 'API', 'Integration', 'Developer'],
+    cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
+    published: true,
+    created_at: '2025-05-23T11:00:00Z',
+    content: `<p class="lead">The Hermes API exposes agent capabilities to external applications. Build AI-powered products that delegate tasks to Hermes, receive results, and integrate them into existing workflows.</p>
+
+<h2>Authentication</h2>
+<p>All API requests use Bearer token authentication. Generate tokens from the Hermes dashboard. Tokens can be scoped to specific capabilities — read-only for monitoring, full execution for agent tasks.</p>
+
+<h2>Core Endpoints</h2>
+<ul>
+  <li><strong>POST /tasks</strong> — Create a new agent task with a natural language goal</li>
+  <li><strong>GET /tasks/:id</strong> — Check task status and retrieve results</li>
+  <li><strong>GET /tasks/:id/logs</strong> — Stream execution logs in real-time</li>
+  <li><strong>POST /tasks/:id/cancel</strong> — Cancel a running task</li>
+  <li><strong>GET /agents</strong> — List available agent configurations</li>
+</ul>
+
+<h2>Real-World Patterns</h2>
+<p><strong>Async workflow automation:</strong> Create a task, store the task ID, poll for completion. Use webhooks to receive push notifications when the task finishes.</p>
+<p><strong>Human-in-the-loop:</strong> Set task breakpoints that pause execution and wait for human approval before continuing. Critical for destructive or expensive operations.</p>
+<p><strong>Parallel delegation:</strong> Create multiple tasks simultaneously — Hermes handles coordination and returns consolidated results.</p>
+
+<h2>Error Handling</h2>
+<p>Agent tasks can fail for reasons beyond API errors: ambiguous goals, tool failures, timeout limits. Design for graceful degradation: if a task fails, log the failure, notify the user, and provide partial results when available.</p>
+
+<h2>Pricing and Limits</h2>
+<p>The API is priced per task based on complexity and execution time. Free tier includes 100 tasks/month. Higher tiers offer longer task timeouts, more tool access, and priority execution.</p>`,
+  },
+  'multi-agent-orchestration-hermes': {
+    id: '15',
+    title: 'Multi-Agent Orchestration with Hermes: Parallel Thinking at Scale',
+    slug: 'multi-agent-orchestration-hermes',
+    excerpt: 'Complex problems benefit from multiple specialized agents working in parallel. How to design, coordinate, and verify multi-agent systems.',
+    category: 'Engineering',
+    tags: ['Hermes', 'Multi-Agent', 'Orchestration', 'AI'],
+    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    published: true,
+    created_at: '2025-05-24T09:00:00Z',
+    content: `<p class="lead">Single agents hit ceilings on complex tasks. Multi-agent systems distribute work across specialized roles — research, coding, review — and synthesize results into coherent outputs.</p>
+
+<h2>Why Multi-Agent?</h2>
+<p>Different agents can specialize. One agent researches, another writes code, a third reviews. They work in parallel, each using the tools and context best suited to their subtask. The orchestrator synthesizes their outputs into the final result.</p>
+<p>This mirrors how teams work: specialists who contribute to a shared goal, coordinated by a lead.</p>
+
+<h2>Designing Multi-Agent Systems</h2>
+<ul>
+  <li><strong>Role assignment</strong> — each agent has a clear, focused responsibility</li>
+  <li><strong>Shared context</strong> — agents need a common understanding of the problem</li>
+  <li><strong>Output contracts</strong> — each agent knows exactly what to produce</li>
+  <li><strong>Synthesis layer</strong> — a coordinator that combines agent outputs</li>
+  <li><strong>Verification gates</strong> — checkpoints before proceeding to the next phase</li>
+</ul>
+
+<h2>Hermes Subagent API</h2>
+<p>Hermes supports spawning subagents directly via the delegate_task tool. Specify the goal, context, and available toolsets. Subagents run in isolated contexts and return results to the parent.</p>
+<p>For larger systems, use Hermes as the orchestrator layer — it manages the agent roster, coordinates execution order, and handles cross-agent communication.</p>
+
+<h2>When to Use Multi-Agent</h2>
+<p>Multi-agent shines for: comprehensive research reports, full-stack application development, system debugging across multiple services, and content production pipelines. It adds coordination overhead — only use it when the problem genuinely benefits from parallel specialization.</p>`,
+  },
+  'claude-3-7-sonnet-analysis': {
+    id: '16',
+    title: 'Claude 3.7 Sonnet: Anthropic\'s Most Capable Model Analyzed',
+    slug: 'claude-3-7-sonnet-analysis',
+    excerpt: 'Claude 3.7 Sonnet pushes the frontier on coding, reasoning, and long-context understanding. A technical deep dive into what changed and why it matters.',
+    category: 'Language',
+    tags: ['Claude', 'Anthropic', 'LLM', 'Analysis'],
+    cover_image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
+    published: true,
+    created_at: '2025-05-25T10:00:00Z',
+    content: `<p class="lead">Anthropic's Claude 3.7 Sonnet represents a meaningful step forward in capability — particularly for tasks that require sustained reasoning, code generation, and working with long documents.</p>
+
+<h2>What Is Claude 3.7 Sonnet?</h2>
+<p>It is Anthropic's most recent mid-tier flagship model — positioned between the faster, cheaper Haiku and the most capable Opus. The "Sonnet" tier has historically been the sweet spot for production applications: capable but cost-efficient.</p>
+
+<h2>Key Improvements</h2>
+<p><strong>Coding:</strong> Claude 3.7 Sonnet demonstrates significant improvement on code generation benchmarks, particularly for complex, ambiguous specifications. It understands project context better and produces fewer hallucinations about library APIs.</p>
+<p><strong>Extended thinking:</strong> The model supports extended chain-of-thought reasoning — it can think through multi-step problems before responding. This is particularly valuable for complex analysis, debugging, and architectural decisions.</p>
+<p><strong>Long context:</strong> Maintains coherence and consistency across 200K token contexts — useful for analyzing entire codebases, legal documents, or research corpora in a single pass.</p>
+
+<h2>How It Compares</h2>
+<p>On standard benchmarks, Claude 3.7 Sonnet outperforms GPT-4o on reasoning and coding tasks. It is slightly slower than 3.5 Sonnet but significantly more capable. For production applications, the capability improvement outweighs the latency cost in most cases.</p>
+
+<h2>Use Cases Where It Excels</h2>
+<ul>
+  <li>Full application development from specification</li>
+  <li>Code review with full repository context</li>
+  <li>Complex multi-document analysis (legal, financial, research)</li>
+  <li>Technical writing with precise terminology</li>
+</ul>`,
+  },
+  'claude-code-advanced-techniques': {
+    id: '17',
+    title: 'Claude Code: Advanced Techniques for Professional Developers',
+    slug: 'claude-code-advanced-techniques',
+    excerpt: 'Most developers use Claude Code at 10% of its potential. Advanced patterns for code generation, refactoring, debugging, and autonomous development.',
+    category: 'Engineering',
+    tags: ['Claude', 'Claude Code', 'Development', 'Advanced'],
+    cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
+    published: true,
+    created_at: '2025-05-26T09:00:00Z',
+    content: `<p class="lead">Claude Code is a coding agent, not a autocomplete tool. Most developers use it for simple completions. The real power is in autonomous task execution — from spec to implementation, with iteration and verification.</p>
+
+<h2>Beyond Autocomplete</h2>
+<p>The difference between using Claude Code as a smarter autocomplete versus a coding partner is how you frame tasks. Instead of "write a function that does X," try "implement feature Y according to this spec, write tests, and verify they pass."</p>
+
+<h2>Spec-First Development</h2>
+<p>Start with a clear specification file. Give Claude Code the spec as context and ask it to implement. This creates an artifact to verify against — and a record of what was built versus what was requested.</p>
+
+<h2>Iterative Refinement</h2>
+<p>Claude Code excels at iterative improvement. After initial implementation, ask for a critique. "Review this code for performance issues, potential bugs, and deviation from our style guide." It will identify problems, then you can ask it to fix them one by one.</p>
+
+<h2>Debugging Patterns</h2>
+<ul>
+  <li><strong>Root cause, not symptoms</strong> — ask "why is this failing" not "how do I suppress the error"</li>
+  <li><strong>Reproduce first</strong> — ask Claude to write a minimal reproduction before attempting fixes</li>
+  <li><strong>Explain the system, not just the error</strong> — context about the surrounding architecture helps identify deeper issues</li>
+</ul>
+
+<h2>Autonomous Development Sessions</h2>
+<p>Set Claude Code loose on a well-scoped task with clear acceptance criteria, a budget limit (max iterations or time), and a checkpoint frequency (report every N steps). Review the artifacts at the end. This is how you go from "tool that suggests code" to "agent that builds features."</p>`,
+  },
+  'hermes-research-and-analysis': {
+    id: '18',
+    title: 'Using Hermes for Research: Synthesizing Information at Scale',
+    slug: 'hermes-research-and-analysis',
+    excerpt: 'Hermes can conduct web research, synthesize findings from multiple sources, and produce structured reports. A workflow guide for knowledge workers.',
+    category: 'Vision',
+    tags: ['Hermes', 'Research', 'AI', 'Productivity'],
+    cover_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+    published: true,
+    created_at: '2025-05-27T10:00:00Z',
+    content: `<p class="lead">Research is slow. Reading, synthesizing, connecting, writing — it takes hours. Hermes can accelerate the early stages: gathering, reading, extracting, and organizing information from across the web.</p>
+
+<h2>The Research Pipeline</h2>
+<p>Effective AI-assisted research follows a pipeline: first, gather raw information (web search, document upload, API queries). Then, extract key findings, claims, and data points. Finally, synthesize into a coherent narrative with citations.</p>
+<p>Hermes can run all three stages, with human oversight at the synthesis stage where judgment matters most.</p>
+
+<h2>Web Research with Hermes</h2>
+<p>Hermes can search the web directly, read pages, extract relevant information, and track sources. For a research query like "latest developments in LLM inference optimization," it will find relevant papers, blog posts, and discussions, read the most promising ones, and extract key findings.</p>
+
+<h2>Structured Output</h2>
+<p>Research is only useful when it can be acted on. Ask Hermes for structured output: bullet points with citations, comparison tables, timelines, or annotated bibliographies. Unstructured prose is harder to act on — structure forces clarity.</p>
+
+<h2>Research Skills</h2>
+<p>Build a research skill that encodes your methodology: which sources to prioritize, how to handle conflicting information, how to flag low-confidence findings, and what citation format to use. This makes research consistent and reproducible.</p>
+
+<h2>Human-in-the-Loop</h2>
+<p>The AI does the gathering and extraction. The human does the interpretation and decision-making. This is not about replacing researchers — it is about giving them a research assistant that handles the mechanical parts so they can focus on the thinking parts.</p>`,
+  },
+  'automating-workflows-hermes-agents': {
+    id: '19',
+    title: 'Automating Daily Workflows with Hermes Agents',
+    slug: 'automating-workflows-hermes-agents',
+    excerpt: 'From morning briefings to deployment pipelines, Hermes can automate recurring knowledge work. Practical automation patterns for individuals and teams.',
+    category: 'Engineering',
+    tags: ['Hermes', 'Automation', 'Workflow', 'Productivity'],
+    cover_image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
+    published: true,
+    created_at: '2025-05-28T09:00:00Z',
+    content: `<p class="lead">Knowledge work has recurring patterns: check X, summarize Y, update Z. Each takes a few minutes but cumulatively consume hours. Hermes can automate these patterns — consistently, on schedule, without reminders.</p>
+
+<h2>What Can Be Automated</h2>
+<ul>
+  <li><strong>Morning briefings</strong> — summarize overnight emails, Slack messages, calendar events, and relevant news</li>
+  <li><strong>Content pipelines</strong> — draft, review, edit, and schedule content on a recurring schedule</li>
+  <li><strong>Monitoring and alerts</strong> — watch for changes in external systems (prices, competitors, metrics) and report</li>
+  <li><strong>Deployment pipelines</strong> — build, test, deploy, and verify with minimal human involvement</li>
+  <li><strong>Research digests</strong> — weekly synthesis of industry news tailored to your interests</li>
+</ul>
+
+<h2>Cron Jobs and Scheduled Tasks</h2>
+<p>Hermes supports scheduled tasks via cron syntax. Set up a daily briefing at 8am, a weekly research digest on Monday mornings, and a monthly report on project metrics. Each scheduled task runs autonomously and delivers results to your preferred channel.</p>
+
+<h2>Building Automation Skills</h2>
+<p>An automation skill captures: the trigger (schedule or event), the steps to execute, the verification checks, and the delivery destination. Once written, the skill runs unattended forever — or until the underlying process changes.</p>
+
+<h2>The Automation Mindset</h2>
+<p>The key question: is this task the same every time? If yes, it can probably be automated. If the task requires judgment or adapts to new information, it needs a human. Automate the mechanical, reserve the mental for what actually requires it.</p>`,
+  },
+  'future-of-ai-agents-hermes': {
+    id: '20',
+    title: 'The Future of AI Agents: What Comes After Single-Model Chatbots',
+    slug: 'future-of-ai-agents-hermes',
+    excerpt: 'AI agents represent the next platform shift. Understanding where autonomous AI is headed — and what it means for how we build and interact with software.',
+    category: 'Vision',
+    tags: ['AI Agents', 'Future', 'Hermes', 'Platform'],
+    cover_image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
+    published: true,
+    created_at: '2025-05-29T11:00:00Z',
+    content: `<p class="lead">We are in the early innings of AI agents. The first wave — chatbots that answer questions — is giving way to systems that take actions, coordinate resources, and complete real-world tasks. The implications are profound.</p>
+
+<h2>From Text to Action</h2>
+<p>Language models that only generate text are a stepping stone. The durable value is in systems that can observe the world, plan a response, execute actions, and adapt based on feedback. This is the agent loop: perceive, plan, act, learn, repeat.</p>
+
+<h2>The Platform Shift</h2>
+<p>Platform shifts follow a pattern: a new primitive emerges, then a new stack builds on top of it. The PC gave us spreadsheets and word processors. The internet gave us search and e-commerce. Mobile gave us ridesharing and food delivery. AI agents are the new primitive — and the stack above them is being built right now.</p>
+<p>Hermes represents an early attempt at this full agent stack: memory, planning, tool use, delegation, and learning — integrated into a system that non-engineers can use.</p>
+
+<h2>What Gets Easier First</h2>
+<p>Task automation for knowledge workers: research, writing, scheduling, monitoring, reporting. These are high-value, high-frequency tasks that currently require significant human time. Automating them frees people for judgment-heavy work.</p>
+
+<h2>What Comes Later</h2>
+<p>Agents that coordinate across services without human orchestration. Agents that learn from experience and improve over time. Agents that collaborate with each other as naturally as humans do. We are years away from this, but the trajectory is clear.</p>
+
+<h2>Implications for Builders</h2>
+<p>The builders who understand agents now will shape what the agent ecosystem becomes. The opportunity is not just in building agents — it is in building the infrastructure, tools, and patterns that make agents useful and safe at scale.</p>`,
+  },
 }
 
 interface PageProps {
