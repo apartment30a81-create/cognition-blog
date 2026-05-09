@@ -340,7 +340,7 @@ const MOCK_POSTS: Record<string, any> = {
     excerpt: 'Hermes Agent is a powerful AI assistant that can plan, reason, and execute tasks autonomously. Here is how to get the most out of it.',
     category: 'Engineering',
     tags: ['Hermes', 'Agent', 'Tutorial', 'AI'],
-    cover_image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80',
     published: true,
     created_at: '2025-05-20T09:00:00Z',
     content: `<p class="lead">Hermes Agent is not just another chatbot. It is an autonomous agent that can plan, delegate, search the web, write code, and execute multi-step workflows — all from a single prompt.</p>
@@ -378,7 +378,7 @@ const MOCK_POSTS: Record<string, any> = {
     excerpt: 'Two powerful AI systems, two different philosophies. We break down capabilities, use cases, and which one to reach for first.',
     category: 'Vision',
     tags: ['Hermes', 'Claude', 'Comparison', 'AI'],
-    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1535378917042-10a22a959095?w=800&q=80',
     published: true,
     created_at: '2025-05-21T10:00:00Z',
     content: `<p class="lead">Both Hermes and Claude are capable AI assistants. But they are built for different purposes, and understanding those differences is the key to using both effectively.</p>

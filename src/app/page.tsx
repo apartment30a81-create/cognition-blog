@@ -10,7 +10,7 @@ const MOCK_POSTS = [
     title: 'Building Autonomous AI Agents with Claude Code',
     slug: 'autonomous-ai-agents-claude-code',
     excerpt: 'A deep dive into orchestrating multi-agent systems that can plan, reason, and execute complex tasks with minimal human intervention.',
-    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
     category: 'Engineering',
     tags: ['AI Agents', 'Claude', 'Autonomy', 'LLM'],
     published: true,
@@ -21,7 +21,7 @@ const MOCK_POSTS = [
     title: 'Understanding Transformer Architecture: From Attention to AGI',
     slug: 'transformer-architecture-attention-agi',
     excerpt: 'A plain-language breakdown of how transformers work, why they scale, and what the scaling laws tell us about the path to AGI.',
-    cover_image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80',
     category: 'Vision',
     tags: ['Transformers', 'Architecture', 'AGI', 'Scaling'],
     published: true,
@@ -32,7 +32,7 @@ const MOCK_POSTS = [
     title: 'RAG vs Fine-tuning: When to Use Each',
     slug: 'rag-vs-fine-tuning',
     excerpt: 'Retrieval-augmented generation and fine-tuning solve different problems. A practical decision framework for production AI systems.',
-    cover_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&q=80',
     category: 'Engineering',
     tags: ['RAG', 'Fine-tuning', 'LLM', 'Production'],
     published: true,
@@ -65,7 +65,7 @@ const MOCK_POSTS = [
     title: 'AI Safety: The Alignment Problem in 2025',
     slug: 'ai-safety-alignment-problem-2025',
     excerpt: 'What has the research community actually learned about aligning large language models? A sober look at where we are and what remains unsolved.',
-    cover_image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
     category: 'Ethics',
     tags: ['Safety', 'Alignment', 'RLHF', 'Research'],
     published: true,
@@ -76,7 +76,7 @@ const MOCK_POSTS = [
     title: 'Building with Claude Opus 4: Real-world Performance Benchmarks',
     slug: 'claude-opus-4-real-world-benchmarks',
     excerpt: 'We tested Opus 4 against GPT-4 Turbo and Gemini Pro on code generation, reasoning, and long-context tasks. Here is what we found.',
-    cover_image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1555949963-aa79bcee37c1?w=800&q=80',
     category: 'Language',
     tags: ['Claude', 'Benchmarks', 'Opus', 'Evaluation'],
     published: true,
@@ -87,7 +87,7 @@ const MOCK_POSTS = [
     title: 'Open Source LLMs in 2025: Llama 3, Mistral, and the Rest',
     slug: 'open-source-llms-2025',
     excerpt: 'The gap between open and closed models has narrowed dramatically. An honest comparison of the top open-weight models.',
-    cover_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
     category: 'Vision',
     tags: ['Open Source', 'Llama', 'Mistral', 'LLM'],
     published: true,
@@ -120,7 +120,7 @@ const MOCK_POSTS = [
     title: 'Getting Started with Hermes Agent: A Complete Practical Guide',
     slug: 'hermes-agent-practical-guide',
     excerpt: 'Hermes Agent is a powerful AI assistant that can plan, reason, and execute tasks autonomously. Here is how to get the most out of it.',
-    cover_image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80',
     category: 'Engineering',
     tags: ['Hermes', 'Agent', 'Tutorial', 'AI'],
     published: true,
@@ -131,7 +131,7 @@ const MOCK_POSTS = [
     title: 'Hermes Agent vs Claude: Comparing AI Assistants in 2025',
     slug: 'hermes-vs-claude-ai-assistants',
     excerpt: 'Two powerful AI systems, two different philosophies. We break down capabilities, use cases, and which one to reach for first.',
-    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1535378917042-10a22a959095?w=800&q=80',
     category: 'Vision',
     tags: ['Hermes', 'Claude', 'Comparison', 'AI'],
     published: true,
@@ -153,7 +153,7 @@ const MOCK_POSTS = [
     title: 'Hermes API: Integrating AI Agents into Your Applications',
     slug: 'hermes-api-integration-guide',
     excerpt: 'The Hermes API lets you embed autonomous agent capabilities into any product. A practical guide to authentication, endpoints, and real-world patterns.',
-    cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80',
     category: 'Engineering',
     tags: ['Hermes', 'API', 'Integration', 'Developer'],
     published: true,
@@ -164,7 +164,7 @@ const MOCK_POSTS = [
     title: 'Multi-Agent Orchestration with Hermes: Parallel Thinking at Scale',
     slug: 'multi-agent-orchestration-hermes',
     excerpt: 'Complex problems benefit from multiple specialized agents working in parallel. How to design, coordinate, and verify multi-agent systems.',
-    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?w=800&q=80',
     category: 'Engineering',
     tags: ['Hermes', 'Multi-Agent', 'Orchestration', 'AI'],
     published: true,
@@ -175,7 +175,7 @@ const MOCK_POSTS = [
     title: "Claude 3.7 Sonnet: Anthropic's Most Capable Model Analyzed",
     slug: 'claude-3-7-sonnet-analysis',
     excerpt: 'Claude 3.7 Sonnet pushes the frontier on coding, reasoning, and long-context understanding. A technical deep dive into what changed and why it matters.',
-    cover_image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1655720828018-edd2daec9349?w=800&q=80',
     category: 'Language',
     tags: ['Claude', 'Anthropic', 'LLM', 'Analysis'],
     published: true,
@@ -186,7 +186,7 @@ const MOCK_POSTS = [
     title: 'Claude Code: Advanced Techniques for Professional Developers',
     slug: 'claude-code-advanced-techniques',
     excerpt: 'Most developers use Claude Code at 10% of its potential. Advanced patterns for code generation, refactoring, debugging, and autonomous development.',
-    cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1607798748738-b15c40d33d57?w=800&q=80',
     category: 'Engineering',
     tags: ['Claude', 'Claude Code', 'Development', 'Advanced'],
     published: true,
@@ -197,7 +197,7 @@ const MOCK_POSTS = [
     title: 'Using Hermes for Research: Synthesizing Information at Scale',
     slug: 'hermes-research-and-analysis',
     excerpt: 'Hermes can conduct web research, synthesize findings from multiple sources, and produce structured reports. A workflow guide for knowledge workers.',
-    cover_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=800&q=80',
     category: 'Vision',
     tags: ['Hermes', 'Research', 'AI', 'Productivity'],
     published: true,
@@ -208,7 +208,7 @@ const MOCK_POSTS = [
     title: 'Automating Daily Workflows with Hermes Agents',
     slug: 'automating-workflows-hermes-agents',
     excerpt: 'From morning briefings to deployment pipelines, Hermes can automate recurring knowledge work. Practical automation patterns for individuals and teams.',
-    cover_image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
     category: 'Engineering',
     tags: ['Hermes', 'Automation', 'Workflow', 'Productivity'],
     published: true,
@@ -219,7 +219,7 @@ const MOCK_POSTS = [
     title: 'The Future of AI Agents: What Comes After Single-Model Chatbots',
     slug: 'future-of-ai-agents-hermes',
     excerpt: 'AI agents represent the next platform shift. Understanding where autonomous AI is headed — and what it means for how we build and interact with software.',
-    cover_image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1684391747344-5f0c8418f10d?w=800&q=80',
     category: 'Vision',
     tags: ['AI Agents', 'Future', 'Hermes', 'Platform'],
     published: true,
@@ -241,7 +241,7 @@ const MOCK_POSTS = [
     title: "Microsoft's GitHub AI Agent: The Coding Assistant That Codes for You",
     slug: 'github-copilot-agent-microsoft-build',
     excerpt: "Microsoft shipped an AI agent that doesn't just suggest code — it writes, tests, and ships features autonomously. A practical breakdown of what it can do.",
-    cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1618477247222-acbdb0e159b3?w=800&q=80',
     category: 'Engineering',
     tags: ['Microsoft', 'GitHub', 'AI Agent', 'Coding'],
     published: true,
@@ -274,12 +274,20 @@ const MOCK_POSTS = [
     title: '2025 Was the Year of AI Agents: What Actually Happened and What Failed',
     slug: 'ai-agents-2025-year-in-review',
     excerpt: 'Fortune called it "the year of agentic AI." Deloitte called it "a story as old as time." Both are right. A clear-eyed look at what actually delivered.',
-    cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
+    cover_image: 'https://images.unsplash.com/photo-1698344161454-50ff2b631c4d?w=800&q=80',
     category: 'Vision',
     tags: ['AI Agents', '2025', 'Year Review', 'Agentic AI'],
     published: true,
     created_at: '2025-06-03T11:00:00Z',
   },
+]
+
+const CATEGORIES = ['All', 'Engineering', 'Vision', 'Language', 'Ethics']
+
+const ALL_TAGS = [
+  'AI Agents', 'Claude', 'LLM', 'Transformers', 'RAG', 'Fine-tuning',
+  'Multimodal', 'Safety', 'Open Source', 'Copilot', 'Hermes', 'Agent',
+  'API', 'Security', 'Future', 'Research', 'Automation', 'Platform'
 ]
 
 function formatDate(dateString: string) {
@@ -289,6 +297,8 @@ function formatDate(dateString: string) {
 export default function HomePage() {
   const [posts, setPosts] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
+  const [activeCategory, setActiveCategory] = useState('All')
+  const [activeTag, setActiveTag] = useState<string | null>(null)
 
   useEffect(() => {
     async function fetchPosts() {
@@ -311,6 +321,12 @@ export default function HomePage() {
     fetchPosts()
   }, [])
 
+  const filteredPosts = posts.filter(post => {
+    const categoryMatch = activeCategory === 'All' || post.category === activeCategory
+    const tagMatch = !activeTag || (post.tags && post.tags.includes(activeTag))
+    return categoryMatch && tagMatch
+  })
+
   return (
     <>
       <section className="hero">
@@ -318,22 +334,109 @@ export default function HomePage() {
           <p className="hero-eyebrow">Featured</p>
           <h1>The Frontier of <em>Machine Intelligence</em></h1>
           <p className="hero-desc">
-            In-depth tutorials, research breakdowns &amp; practical guides for AI practitioners and enthusiasts
+            In-depth tutorials, research breakdowns & practical guides for AI practitioners and enthusiasts
           </p>
+        </div>
+      </section>
+
+      {/* Category Filter */}
+      <section style={{ padding: '1.5rem 0', borderBottom: '1px solid var(--border)' }}>
+        <div className="container">
+          <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            <span style={{ fontFamily: "'Syne', sans-serif", fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-3)', marginRight: '0.5rem' }}>Categories:</span>
+            {CATEGORIES.map(cat => (
+              <button
+                key={cat}
+                onClick={() => { setActiveCategory(cat); setActiveTag(null) }}
+                style={{
+                  fontFamily: "'Syne', sans-serif",
+                  fontSize: '0.78rem',
+                  fontWeight: 600,
+                  padding: '0.35rem 0.85rem',
+                  borderRadius: '20px',
+                  border: '1px solid',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                  background: activeCategory === cat ? 'var(--text)' : 'transparent',
+                  color: activeCategory === cat ? 'var(--bg)' : 'var(--text-2)',
+                  borderColor: activeCategory === cat ? 'var(--text)' : 'var(--border)',
+                }}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Tags Filter */}
+      <section style={{ padding: '1rem 0', borderBottom: '1px solid var(--border)' }}>
+        <div className="container">
+          <div style={{ display: 'flex', gap: '0.4rem', flexWrap: 'wrap', alignItems: 'center' }}>
+            <span style={{ fontFamily: "'Syne', sans-serif", fontSize: '0.75rem', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--text-3)', marginRight: '0.5rem' }}>Tags:</span>
+            {ALL_TAGS.map(tag => (
+              <button
+                key={tag}
+                onClick={() => setActiveTag(activeTag === tag ? null : tag)}
+                style={{
+                  fontFamily: "'Syne', sans-serif",
+                  fontSize: '0.72rem',
+                  fontWeight: 500,
+                  padding: '0.25rem 0.65rem',
+                  borderRadius: '15px',
+                  border: '1px solid',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                  background: activeTag === tag ? 'var(--accent-3)' : 'transparent',
+                  color: activeTag === tag ? '#faf8f4' : 'var(--text-3)',
+                  borderColor: activeTag === tag ? 'var(--accent-3)' : 'var(--border)',
+                }}
+              >
+                {tag}
+              </button>
+            ))}
+            {activeTag && (
+              <button
+                onClick={() => setActiveTag(null)}
+                style={{
+                  fontFamily: "'Syne', sans-serif",
+                  fontSize: '0.72rem',
+                  fontWeight: 500,
+                  padding: '0.25rem 0.65rem',
+                  borderRadius: '15px',
+                  border: '1px solid var(--accent)',
+                  cursor: 'pointer',
+                  background: 'transparent',
+                  color: 'var(--accent)',
+                }}
+              >
+                ✕ Clear
+              </button>
+            )}
+          </div>
         </div>
       </section>
 
       <section className="posts-section">
         <div className="container-wide">
           <div className="section-header">
-            <h2>Latest Articles</h2>
+            <h2>
+              {activeCategory === 'All' && !activeTag ? 'Latest Articles' : `${activeCategory}${activeTag ? ' · ' + activeTag : ''}`}
+              <span style={{ fontSize: '0.9rem', color: 'var(--text-3)', fontWeight: 400, marginLeft: '0.75rem' }}>
+                {filteredPosts.length} {filteredPosts.length === 1 ? 'article' : 'articles'}
+              </span>
+            </h2>
           </div>
 
           {loading ? (
             <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-3)' }}>Loading...</div>
+          ) : filteredPosts.length === 0 ? (
+            <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-3)' }}>
+              No articles found for this filter.
+            </div>
           ) : (
             <div className="post-grid">
-              {posts.map((post, i) => (
+              {filteredPosts.map((post, i) => (
                 <article key={post.id} className={`post-card animate-in`} style={{ animationDelay: `${i * 0.05}s` }}>
                   {post.cover_image && (
                     <img src={post.cover_image} alt={post.title} className="post-card-image" loading="lazy" />
