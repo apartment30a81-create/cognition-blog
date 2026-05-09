@@ -1,7 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { createClient } from '@/lib/supabase/client'
+import { use } from 'react'
 
 const MOCK_POSTS: Record<string, any> = {
   'autonomous-ai-agents-claude-code': {
@@ -337,11 +336,12 @@ const MOCK_POSTS: Record<string, any> = {
 }
 
 interface PageProps {
-  params: { slug: string }
+  params: Promise<{ slug: string }>
 }
 
 export default function PostPage({ params }: PageProps) {
-  const post = MOCK_POSTS[params.slug]
+  const { slug } = use(params)
+  const post = MOCK_POSTS[slug]
 
   const formatDate = (dateStr: string) =>
     new Date(dateStr).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
