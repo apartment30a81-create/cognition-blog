@@ -12,7 +12,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['AI Agents', 'Claude', 'Autonomy', 'LLM'],
     cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
     published: true,
-    created_at: '2025-05-01T10:00:00Z',
+    created_at: '2026-05-01T10:00:00Z',
     content: `<p class="lead">The landscape of AI development has shifted dramatically. We're no longer writing scripts — we're architecting agents.</p>
 
 <h2>The Rise of the Autonomous Agent</h2>
@@ -62,7 +62,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Transformers', 'Architecture', 'AGI', 'Scaling'],
     cover_image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
     published: true,
-    created_at: '2025-05-03T09:00:00Z',
+    created_at: '2026-05-03T09:00:00Z',
     content: `<p class="lead">Every frontier language model is a transformer. Understanding how they work isn't optional anymore — it's competitive intelligence.</p>
 
 <h2>What Is a Transformer?</h2>
@@ -93,7 +93,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['RAG', 'Fine-tuning', 'LLM', 'Production'],
     cover_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     published: true,
-    created_at: '2025-05-05T11:00:00Z',
+    created_at: '2026-05-05T11:00:00Z',
     content: `<p class="lead">Both RAG and fine-tuning solve the knowledge problem — but they attack it from opposite ends. Choosing wrong means paying twice.</p>
 
 <h2>The Knowledge Problem</h2>
@@ -136,7 +136,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Inference', 'Cost', 'Production', 'Optimization'],
     cover_image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
     published: true,
-    created_at: '2025-05-07T08:00:00Z',
+    created_at: '2026-05-07T08:00:00Z',
     content: `<p class="lead">The sticker price is never the real price. When you move from demo to production, a dozen hidden costs emerge.</p>
 
 <h2>Latency is Money</h2>
@@ -166,7 +166,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Multimodal', 'Vision', 'Audio', 'GPT-4V'],
     cover_image: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&q=80',
     published: true,
-    created_at: '2025-05-09T10:00:00Z',
+    created_at: '2026-05-09T10:00:00Z',
     content: `<p class="lead">Text was only the beginning. The next wave of AI products is built on models that can see, hear, and understand the physical world.</p>
 
 <h2>What Multimodal Actually Means</h2>
@@ -197,7 +197,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Safety', 'Alignment', 'RLHF', 'Research'],
     cover_image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
     published: true,
-    created_at: '2025-05-11T09:00:00Z',
+    created_at: '2026-05-11T09:00:00Z',
     content: `<p class="lead">Alignment isn't a feature you can patch in. It's an architectural challenge that runs deeper than any safety review process.</p>
 
 <h2>What Alignment Actually Means</h2>
@@ -230,7 +230,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Claude', 'Benchmarks', 'Opus', 'Evaluation'],
     cover_image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
     published: true,
-    created_at: '2025-05-13T11:00:00Z',
+    created_at: '2026-05-13T11:00:00Z',
     content: `<p class="lead">Numbers in a vacuum don't tell you which model to choose. We ran Claude Opus 4, GPT-4 Turbo, and Gemini Pro through tasks that mirror real production use cases.</p>
 
 <h2>Methodology</h2>
@@ -253,7 +253,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Open Source', 'Llama', 'Mistral', 'LLM'],
     cover_image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80',
     published: true,
-    created_at: '2025-05-15T10:00:00Z',
+    created_at: '2026-05-15T10:00:00Z',
     content: `<p class="lead">A year ago, closed models were clearly superior. Today, Llama 3 70B and Mistral Large are competitive with GPT-4 on many tasks. The open-source landscape has changed.</p>
 
 <h2>The Current Leaders</h2>
@@ -284,7 +284,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Copilot', 'Cursor', 'Tabnine', 'Developer Tools'],
     cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
     published: true,
-    created_at: '2025-05-17T09:00:00Z',
+    created_at: '2026-05-17T09:00:00Z',
     content: `<p class="lead">AI coding assistants have matured from novelty to necessity. But not all are built the same. Two weeks in a real production codebase with each.</p>
 
 <h2>GitHub Copilot</h2>
@@ -311,7 +311,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Future of Work', 'AI', 'Development', 'Productivity'],
     cover_image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
     published: true,
-    created_at: '2025-05-19T11:00:00Z',
+    created_at: '2026-05-19T11:00:00Z',
     content: `<p class="lead">Every cycle of automation displaces some work and creates new work. This time is different — AI writes code, so what does a developer do?</p>
 
 <h2>The Displacement Question</h2>
@@ -342,7 +342,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Hermes', 'Agent', 'Tutorial', 'AI'],
     cover_image: 'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&q=80',
     published: true,
-    created_at: '2025-05-20T09:00:00Z',
+    created_at: '2026-05-20T09:00:00Z',
     content: `<p class="lead">Hermes Agent is not just another chatbot. It is an autonomous agent that can plan, delegate, search the web, write code, and execute multi-step workflows — all from a single prompt.</p>
 
 <h2>What Makes Hermes Different</h2>
@@ -380,7 +380,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Hermes', 'Claude', 'Comparison', 'AI'],
     cover_image: 'https://images.unsplash.com/photo-1535378917042-10a22a959095?w=800&q=80',
     published: true,
-    created_at: '2025-05-21T10:00:00Z',
+    created_at: '2026-05-21T10:00:00Z',
     content: `<p class="lead">Both Hermes and Claude are capable AI assistants. But they are built for different purposes, and understanding those differences is the key to using both effectively.</p>
 
 <h2>Hermes: The Agent-First System</h2>
@@ -407,7 +407,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Hermes', 'Agents', 'Skills', 'Development'],
     cover_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     published: true,
-    created_at: '2025-05-22T09:00:00Z',
+    created_at: '2026-05-22T09:00:00Z',
     content: `<p class="lead">Hermes is extensible. Skills are modular instruction sets that add specialized capabilities — from domain knowledge to custom workflows to integrations with proprietary tools.</p>
 
 <h2>What Is a Skill?</h2>
@@ -445,7 +445,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Hermes', 'API', 'Integration', 'Developer'],
     cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
     published: true,
-    created_at: '2025-05-23T11:00:00Z',
+    created_at: '2026-05-23T11:00:00Z',
     content: `<p class="lead">The Hermes API exposes agent capabilities to external applications. Build AI-powered products that delegate tasks to Hermes, receive results, and integrate them into existing workflows.</p>
 
 <h2>Authentication</h2>
@@ -480,7 +480,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Hermes', 'Multi-Agent', 'Orchestration', 'AI'],
     cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
     published: true,
-    created_at: '2025-05-24T09:00:00Z',
+    created_at: '2026-05-24T09:00:00Z',
     content: `<p class="lead">Single agents hit ceilings on complex tasks. Multi-agent systems distribute work across specialized roles — research, coding, review — and synthesize results into coherent outputs.</p>
 
 <h2>Why Multi-Agent?</h2>
@@ -512,7 +512,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Claude', 'Anthropic', 'LLM', 'Analysis'],
     cover_image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80',
     published: true,
-    created_at: '2025-05-25T10:00:00Z',
+    created_at: '2026-05-25T10:00:00Z',
     content: `<p class="lead">Anthropic's Claude 3.7 Sonnet represents a meaningful step forward in capability — particularly for tasks that require sustained reasoning, code generation, and working with long documents.</p>
 
 <h2>What Is Claude 3.7 Sonnet?</h2>
@@ -543,7 +543,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Claude', 'Claude Code', 'Development', 'Advanced'],
     cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
     published: true,
-    created_at: '2025-05-26T09:00:00Z',
+    created_at: '2026-05-26T09:00:00Z',
     content: `<p class="lead">Claude Code is a coding agent, not a autocomplete tool. Most developers use it for simple completions. The real power is in autonomous task execution — from spec to implementation, with iteration and verification.</p>
 
 <h2>Beyond Autocomplete</h2>
@@ -574,7 +574,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Hermes', 'Research', 'AI', 'Productivity'],
     cover_image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&q=80',
     published: true,
-    created_at: '2025-05-27T10:00:00Z',
+    created_at: '2026-05-27T10:00:00Z',
     content: `<p class="lead">Research is slow. Reading, synthesizing, connecting, writing — it takes hours. Hermes can accelerate the early stages: gathering, reading, extracting, and organizing information from across the web.</p>
 
 <h2>The Research Pipeline</h2>
@@ -602,7 +602,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Hermes', 'Automation', 'Workflow', 'Productivity'],
     cover_image: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&q=80',
     published: true,
-    created_at: '2025-05-28T09:00:00Z',
+    created_at: '2026-05-28T09:00:00Z',
     content: `<p class="lead">Knowledge work has recurring patterns: check X, summarize Y, update Z. Each takes a few minutes but cumulatively consume hours. Hermes can automate these patterns — consistently, on schedule, without reminders.</p>
 
 <h2>What Can Be Automated</h2>
@@ -632,7 +632,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['AI Agents', 'Future', 'Hermes', 'Platform'],
     cover_image: 'https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800&q=80',
     published: true,
-    created_at: '2025-05-29T11:00:00Z',
+    created_at: '2026-05-29T11:00:00Z',
     content: `<p class="lead">We are in the early innings of AI agents. The first wave — chatbots that answer questions — is giving way to systems that take actions, coordinate resources, and complete real-world tasks. The implications are profound.</p>
 
 <h2>From Text to Action</h2>
@@ -660,7 +660,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Security', 'AI Agents', 'Threats', 'Defense'],
     cover_image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
     published: true,
-    created_at: '2025-05-30T09:00:00Z',
+    created_at: '2026-05-30T09:00:00Z',
     content: `<p class="lead">Q4 2025 marked a turning point: AI agents moved from demos to production, and attackers noticed. Agent-specific attack patterns emerged at scale — and most organizations were not prepared.</p>
 
 <h2>What Happened</h2>
@@ -696,7 +696,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Microsoft', 'GitHub', 'AI Agent', 'Coding', 'Development'],
     cover_image: 'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&q=80',
     published: true,
-    created_at: '2025-05-31T10:00:00Z',
+    created_at: '2026-05-31T10:00:00Z',
     content: `<p class="lead">GitHub Copilot's new agent mode doesn't suggest code — it owns a feature from spec to deployment. This is not autocomplete with extra steps. This is a different relationship between developer and tool.</p>
 
 <h2>What the Agent Does</h2>
@@ -725,7 +725,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Vertical AI', 'AI Agents', 'Industry', 'Healthcare', 'Finance'],
     cover_image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80',
     published: true,
-    created_at: '2025-06-01T09:00:00Z',
+    created_at: '2026-06-01T09:00:00Z',
     content: `<p class="lead">A general-purpose agent asked to analyze a medical chart or review a supply chain contract starts cold. A vertical agent trained on thousands of medical charts or contracts starts with domain intuition. That head start compounds.</p>
 
 <h2>Why Horizontal Agents Struggle in Specialized Domains</h2>
@@ -754,7 +754,7 @@ const MOCK_POSTS: Record<string, any> = {
     tags: ['Customer Experience', 'AI Agents', 'CX', 'BCG'],
     cover_image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
     published: true,
-    created_at: '2025-06-02T10:00:00Z',
+    created_at: '2026-06-02T10:00:00Z',
     content: `<p class="lead">For decades, customer service automation meant frustrating phone trees and scripted chatbots that could not deviate from their flowchart. AI agents change that fundamentally — and the results are measurable.</p>
 
 <h2>The Old Model vs. The Agent Model</h2>
@@ -777,16 +777,16 @@ const MOCK_POSTS: Record<string, any> = {
 <h2>The CX Bottom Line</h2>
 <p>The business case is clear: agents reduce cost-to-serve while improving satisfaction scores. But the deeper opportunity is NPS improvement through proactive, personalized service — the kind that used to require dedicated account managers for enterprise clients, now possible at scale for every customer.</p>`,
   },
-  'ai-agents-2025-year-in-review': {
+  'ai-agents-2026-year-in-review': {
     id: '25',
     title: '2025 Was the Year of AI Agents: What Actually Happened and What Failed',
-    slug: 'ai-agents-2025-year-in-review',
+    slug: 'ai-agents-2026-year-in-review',
     excerpt: 'Fortune called it "the year of agentic AI." Deloitte called it "a story as old as time." Both are right. A clear-eyed look at what agentic AI actually delivered in 2025 and where it fell short.',
     category: 'Vision',
     tags: ['AI Agents', '2025', 'Year Review', 'Agentic AI'],
     cover_image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80',
     published: true,
-    created_at: '2025-06-03T11:00:00Z',
+    created_at: '2026-06-03T11:00:00Z',
     content: `<p class="lead">By almost every measure, 2025 was supposed to be the year AI agents transformed how businesses operate. The results were more complicated.</p>
 
 <h2>What Actually Worked</h2>

@@ -14,7 +14,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['AI Agents', 'Claude', 'Autonomy', 'LLM'],
     published: true,
-    created_at: '2025-05-01T10:00:00Z',
+    created_at: '2026-05-01T10:00:00Z',
   },
   {
     id: '2',
@@ -25,7 +25,7 @@ const MOCK_POSTS = [
     category: 'Vision',
     tags: ['Transformers', 'Architecture', 'AGI', 'Scaling'],
     published: true,
-    created_at: '2025-05-03T09:00:00Z',
+    created_at: '2026-05-03T09:00:00Z',
   },
   {
     id: '3',
@@ -36,7 +36,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['RAG', 'Fine-tuning', 'LLM', 'Production'],
     published: true,
-    created_at: '2025-05-05T11:00:00Z',
+    created_at: '2026-05-05T11:00:00Z',
   },
   {
     id: '4',
@@ -47,7 +47,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Inference', 'Cost', 'Production', 'Optimization'],
     published: true,
-    created_at: '2025-05-07T08:00:00Z',
+    created_at: '2026-05-07T08:00:00Z',
   },
   {
     id: '5',
@@ -58,7 +58,7 @@ const MOCK_POSTS = [
     category: 'Language',
     tags: ['Multimodal', 'Vision', 'Audio', 'GPT-4V'],
     published: true,
-    created_at: '2025-05-09T10:00:00Z',
+    created_at: '2026-05-09T10:00:00Z',
   },
   {
     id: '6',
@@ -69,7 +69,7 @@ const MOCK_POSTS = [
     category: 'Ethics',
     tags: ['Safety', 'Alignment', 'RLHF', 'Research'],
     published: true,
-    created_at: '2025-05-11T09:00:00Z',
+    created_at: '2026-05-11T09:00:00Z',
   },
   {
     id: '7',
@@ -80,7 +80,7 @@ const MOCK_POSTS = [
     category: 'Language',
     tags: ['Claude', 'Benchmarks', 'Opus', 'Evaluation'],
     published: true,
-    created_at: '2025-05-13T11:00:00Z',
+    created_at: '2026-05-13T11:00:00Z',
   },
   {
     id: '8',
@@ -91,7 +91,7 @@ const MOCK_POSTS = [
     category: 'Vision',
     tags: ['Open Source', 'Llama', 'Mistral', 'LLM'],
     published: true,
-    created_at: '2025-05-15T10:00:00Z',
+    created_at: '2026-05-15T10:00:00Z',
   },
   {
     id: '9',
@@ -102,7 +102,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Copilot', 'Cursor', 'Tabnine', 'Developer Tools'],
     published: true,
-    created_at: '2025-05-17T09:00:00Z',
+    created_at: '2026-05-17T09:00:00Z',
   },
   {
     id: '10',
@@ -113,7 +113,7 @@ const MOCK_POSTS = [
     category: 'Ethics',
     tags: ['Future of Work', 'AI', 'Development', 'Productivity'],
     published: true,
-    created_at: '2025-05-19T11:00:00Z',
+    created_at: '2026-05-19T11:00:00Z',
   },
   {
     id: '11',
@@ -124,7 +124,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Hermes', 'Agent', 'Tutorial', 'AI'],
     published: true,
-    created_at: '2025-05-20T09:00:00Z',
+    created_at: '2026-05-20T09:00:00Z',
   },
   {
     id: '12',
@@ -135,7 +135,7 @@ const MOCK_POSTS = [
     category: 'Vision',
     tags: ['Hermes', 'Claude', 'Comparison', 'AI'],
     published: true,
-    created_at: '2025-05-21T10:00:00Z',
+    created_at: '2026-05-21T10:00:00Z',
   },
   {
     id: '13',
@@ -146,7 +146,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Hermes', 'Agents', 'Skills', 'Development'],
     published: true,
-    created_at: '2025-05-22T09:00:00Z',
+    created_at: '2026-05-22T09:00:00Z',
   },
   {
     id: '14',
@@ -157,7 +157,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Hermes', 'API', 'Integration', 'Developer'],
     published: true,
-    created_at: '2025-05-23T11:00:00Z',
+    created_at: '2026-05-23T11:00:00Z',
   },
   {
     id: '15',
@@ -168,7 +168,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Hermes', 'Multi-Agent', 'Orchestration', 'AI'],
     published: true,
-    created_at: '2025-05-24T09:00:00Z',
+    created_at: '2026-05-24T09:00:00Z',
   },
   {
     id: '16',
@@ -179,7 +179,7 @@ const MOCK_POSTS = [
     category: 'Language',
     tags: ['Claude', 'Anthropic', 'LLM', 'Analysis'],
     published: true,
-    created_at: '2025-05-25T10:00:00Z',
+    created_at: '2026-05-25T10:00:00Z',
   },
   {
     id: '17',
@@ -190,7 +190,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Claude', 'Claude Code', 'Development', 'Advanced'],
     published: true,
-    created_at: '2025-05-26T09:00:00Z',
+    created_at: '2026-05-26T09:00:00Z',
   },
   {
     id: '18',
@@ -201,7 +201,7 @@ const MOCK_POSTS = [
     category: 'Vision',
     tags: ['Hermes', 'Research', 'AI', 'Productivity'],
     published: true,
-    created_at: '2025-05-27T10:00:00Z',
+    created_at: '2026-05-27T10:00:00Z',
   },
   {
     id: '19',
@@ -212,7 +212,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Hermes', 'Automation', 'Workflow', 'Productivity'],
     published: true,
-    created_at: '2025-05-28T09:00:00Z',
+    created_at: '2026-05-28T09:00:00Z',
   },
   {
     id: '20',
@@ -223,7 +223,7 @@ const MOCK_POSTS = [
     category: 'Vision',
     tags: ['AI Agents', 'Future', 'Hermes', 'Platform'],
     published: true,
-    created_at: '2025-05-29T11:00:00Z',
+    created_at: '2026-05-29T11:00:00Z',
   },
   {
     id: '21',
@@ -234,7 +234,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Security', 'AI Agents', 'Threats', 'Defense'],
     published: true,
-    created_at: '2025-05-30T09:00:00Z',
+    created_at: '2026-05-30T09:00:00Z',
   },
   {
     id: '22',
@@ -245,7 +245,7 @@ const MOCK_POSTS = [
     category: 'Engineering',
     tags: ['Microsoft', 'GitHub', 'AI Agent', 'Coding'],
     published: true,
-    created_at: '2025-05-31T10:00:00Z',
+    created_at: '2026-05-31T10:00:00Z',
   },
   {
     id: '23',
@@ -256,7 +256,7 @@ const MOCK_POSTS = [
     category: 'Vision',
     tags: ['Vertical AI', 'AI Agents', 'Industry', 'Healthcare'],
     published: true,
-    created_at: '2025-06-01T09:00:00Z',
+    created_at: '2026-06-01T09:00:00Z',
   },
   {
     id: '24',
@@ -267,18 +267,18 @@ const MOCK_POSTS = [
     category: 'Vision',
     tags: ['Customer Experience', 'AI Agents', 'CX', 'BCG'],
     published: true,
-    created_at: '2025-06-02T10:00:00Z',
+    created_at: '2026-06-02T10:00:00Z',
   },
   {
     id: '25',
     title: '2025 Was the Year of AI Agents: What Actually Happened and What Failed',
-    slug: 'ai-agents-2025-year-in-review',
+    slug: 'ai-agents-2026-year-in-review',
     excerpt: 'Fortune called it "the year of agentic AI." Deloitte called it "a story as old as time." Both are right. A clear-eyed look at what actually delivered.',
     cover_image: 'https://images.unsplash.com/photo-1698344161454-50ff2b631c4d?w=800&q=80',
     category: 'Vision',
     tags: ['AI Agents', '2025', 'Year Review', 'Agentic AI'],
     published: true,
-    created_at: '2025-06-03T11:00:00Z',
+    created_at: '2026-06-03T11:00:00Z',
   },
 ]
 
