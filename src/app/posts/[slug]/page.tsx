@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { createClient } from '@/lib/supabase/client'
-import Link from 'next/link'
 
-const MOCK_POSTS = [
-  {
+const MOCK_POSTS: Record<string, any> = {
+  'autonomous-ai-agents-claude-code': {
     id: '1',
     title: 'Building Autonomous AI Agents with Claude Code',
     slug: 'autonomous-ai-agents-claude-code',
@@ -55,7 +54,7 @@ const MOCK_POSTS = [
 
 <p>The future isn't agents that replace developers — it's agents that make individual developers 10x more effective.</p>`,
   },
-  {
+  'transformer-architecture-attention-agi': {
     id: '2',
     title: 'Understanding Transformer Architecture: From Attention to AGI',
     slug: 'transformer-architecture-attention-agi',
@@ -86,7 +85,7 @@ const MOCK_POSTS = [
   <li>Evaluate whether a new architecture is genuinely different or just a scaling variant</li>
 </ul>`,
   },
-  {
+  'rag-vs-fine-tuning': {
     id: '3',
     title: 'RAG vs Fine-tuning: When to Use Each',
     slug: 'rag-vs-fine-tuning',
@@ -99,7 +98,7 @@ const MOCK_POSTS = [
     content: `<p class="lead">Both RAG and fine-tuning solve the knowledge problem — but they attack it from opposite ends. Choosing wrong means paying twice.</p>
 
 <h2>The Knowledge Problem</h2>
-<p>LLMs are frozen at training time. Their knowledge has a cutoff. For dynamic or proprietary data, you have two paths:</p>
+<p>LLMs are frozen at training time. Their knowledge has a cutoff. For dynamic or proprietary data, you have two paths.</p>
 
 <h2>RAG: Retrieval-Augmented Generation</h2>
 <p>RAG fetches relevant documents at inference time and injects them into the prompt. Your model answers based on what it retrieves — not what it memorized.</p>
@@ -129,7 +128,7 @@ const MOCK_POSTS = [
 </ol>
 <p>Often the answer is both: fine-tune for behavior, RAG for knowledge. But start with RAG — it's cheaper, more transparent, and easier to iterate.</p>`,
   },
-  {
+  'hidden-costs-llm-inference-scale': {
     id: '4',
     title: 'The Hidden Costs of LLM Inference at Scale',
     slug: 'hidden-costs-llm-inference-scale',
@@ -159,7 +158,7 @@ const MOCK_POSTS = [
 <h2>Survival Strategies</h2>
 <p>The teams that survive production LLM costs use three strategies: aggressive caching, task-specific model routing (small models for simple tasks), and semantic compression of conversation history.</p>`,
   },
-  {
+  'multimodal-ai-beyond-text': {
     id: '5',
     title: 'Multimodal AI: Beyond Text Generation',
     slug: 'multimodal-ai-beyond-text',
@@ -190,7 +189,7 @@ const MOCK_POSTS = [
 <h2>Where This Is Going</h2>
 <p>The next frontier isn't more modalities — it's better fusion. Current models process each modality somewhat separately. True multimodal reasoning means seamlessly combining text, image, audio, and video in a single context window. We're not there yet, but the trajectory is clear.</p>`,
   },
-  {
+  'ai-safety-alignment-problem-2025': {
     id: '6',
     title: 'AI Safety: The Alignment Problem in 2025',
     slug: 'ai-safety-alignment-problem-2025',
@@ -223,7 +222,7 @@ const MOCK_POSTS = [
 <h2>The Honest Summary</h2>
 <p>We have partial solutions that work in most cases. We don't have guarantees. The alignment problem is genuinely hard — it's not a matter of trying harder, it's a matter of fundamental research. The timeline matters: the more capable models become before we solve alignment, the higher the stakes.</p>`,
   },
-  {
+  'claude-opus-4-real-world-benchmarks': {
     id: '7',
     title: 'Building with Claude Opus 4: Real-world Performance Benchmarks',
     slug: 'claude-opus-4-real-world-benchmarks',
@@ -246,7 +245,7 @@ const MOCK_POSTS = [
 <h2>The Takeaway</h2>
 <p>For most teams, the choice isn't about which model is "best" — it's about which model is right for your task profile. If you need long contexts and deep reasoning, Opus 4 is worth the premium. If you're doing high-volume, shorter tasks, GPT-4 Turbo's speed advantage matters more.</p>`,
   },
-  {
+  'open-source-llms-2025': {
     id: '8',
     title: 'Open Source LLMs in 2025: Llama 3, Mistral, and the Rest',
     slug: 'open-source-llms-2025',
@@ -277,7 +276,7 @@ const MOCK_POSTS = [
 <h2>The Practical Recommendation</h2>
 <p>Start with open models for cost-sensitive, data-sensitive, or fine-tuning-heavy workloads. Use closed models for your hardest problems where capability matters more than cost or control.</p>`,
   },
-  {
+  'ai-coding-assistants-comparison': {
     id: '9',
     title: 'AI Coding Assistants: Evaluating GitHub Copilot, Cursor, and Tabnine',
     slug: 'ai-coding-assistants-comparison',
@@ -304,7 +303,7 @@ const MOCK_POSTS = [
 <h2>The Honest Verdict</h2>
 <p>No single tool wins on all dimensions. The best team uses Copilot for speed, Cursor for complex refactoring, and Tabnine for sensitive projects. Budget and context determine which matters most.</p>`,
   },
-  {
+  'future-of-work-ai-developers': {
     id: '10',
     title: 'The Future of Work: How AI Changes What Developers Do',
     slug: 'future-of-work-ai-developers',
@@ -335,58 +334,24 @@ const MOCK_POSTS = [
 <h2>The Prediction</h2>
 <p>Developers who understand AI will replace developers who don't. Not because AI writes code, but because AI-augmented developers can do everything non-augmented developers can do — plus more. The question isn't whether AI changes development. It's whether you change with it.</p>`,
   },
-]
+}
 
-export default function PostPage({ params }: { params: { slug: string } }) {
-  const [post, setPost] = useState<any>(null)
-  const [comments, setComments] = useState<any[]>([])
-  const [commentForm, setCommentForm] = useState({ name: '', content: '' })
-  const [submitting, setSubmitting] = useState(false)
-  const supabase = createClient()
+interface PageProps {
+  params: { slug: string }
+}
 
-  useEffect(() => {
-    const found = MOCK_POSTS.find(p => p.slug === params.slug)
-    setPost(found || null)
+export default function PostPage({ params }: PageProps) {
+  const post = MOCK_POSTS[params.slug]
 
-    const fetchComments = async () => {
-      try {
-        const { data } = await supabase
-          .from('comments')
-          .select('*')
-          .eq('post_id', params.slug)
-          .order('created_at', { ascending: true })
-        if (data) setComments(data)
-      } catch {}
-    }
-    fetchComments()
-  }, [params.slug])
-
-  const handleCommentSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    if (!commentForm.name.trim() || !commentForm.content.trim()) return
-    setSubmitting(true)
-    try {
-      const { data } = await supabase
-        .from('comments')
-        .insert({ post_id: params.slug, author_name: commentForm.name, content: commentForm.content })
-        .select()
-        .single()
-      if (data) setComments(prev => [...prev, data])
-      setCommentForm({ name: '', content: '' })
-    } catch {}
-    setSubmitting(false)
-  }
-
-  const formatDate = (dateStr: string) => {
-    return new Date(dateStr).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
-  }
+  const formatDate = (dateStr: string) =>
+    new Date(dateStr).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })
 
   if (!post) {
     return (
       <div className="container">
-        <div className="empty-state" style={{ padding: '6rem 0' }}>
-          <h3>Post not found</h3>
-          <p>The post you're looking for doesn't exist.</p>
+        <div style={{ padding: '6rem 0', textAlign: 'center' }}>
+          <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.4rem', marginBottom: '0.5rem' }}>Post not found</h3>
+          <p style={{ color: 'var(--text-2)', fontSize: '0.9rem' }}>The post you're looking for doesn't exist.</p>
           <a href="/" className="btn btn-primary" style={{ marginTop: '1.5rem', display: 'inline-flex' }}>← Back to Articles</a>
         </div>
       </div>
@@ -395,66 +360,32 @@ export default function PostPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="container">
-      <article className="post-article animate-in">
-        <header className="post-header">
-          <div className="eyebrow">
-            <span className="post-category-badge">{post.category}</span>
-            <span className="post-date">{formatDate(post.created_at)}</span>
+      <article style={{ padding: '3rem 0' }}>
+        <header style={{ marginBottom: '2.5rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
+            <span style={{ fontFamily: "'Syne', sans-serif", fontSize: '0.65rem', fontWeight: 700, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#faf8f4', background: 'var(--accent-3)', padding: '0.25rem 0.6rem', borderRadius: '3px' }}>{post.category}</span>
+            <span style={{ fontFamily: "'Syne', sans-serif", fontSize: '0.72rem', color: 'var(--text-3)' }}>{formatDate(post.created_at)}</span>
           </div>
-          <h1>{post.title}</h1>
-          <p className="lead">{post.excerpt}</p>
+          <h1 style={{ fontSize: 'clamp(1.8rem, 4vw, 2.8rem)', marginBottom: '1rem', lineHeight: 1.15 }}>{post.title}</h1>
+          <p style={{ fontSize: '1.15rem', color: 'var(--text-2)', fontStyle: 'italic', marginBottom: '2rem', fontWeight: 300 }}>{post.excerpt}</p>
         </header>
 
         {post.cover_image && (
-          <img src={post.cover_image} alt={post.title} className="post-cover" />
+          <img src={post.cover_image} alt={post.title} style={{ width: '100%', borderRadius: '8px', marginBottom: '2.5rem', maxHeight: '480px', objectFit: 'cover' }} />
         )}
 
-        <div className="post-body" dangerouslySetInnerHTML={{ __html: post.content }} />
+        <div style={{ fontSize: '1.05rem', lineHeight: 1.85 }} dangerouslySetInnerHTML={{ __html: post.content }} />
 
-        <div className="post-tags">
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '2.5rem', paddingTop: '1.5rem', borderTop: '1px solid var(--border)' }}>
           {post.tags.map((tag: string) => (
             <span key={tag} className="tag">{tag}</span>
           ))}
         </div>
 
-        <section className="comments-section">
-          <h3>Discussion</h3>
-
-          <form className="comment-form" onSubmit={handleCommentSubmit}>
-            <div className="form-group">
-              <label>Your Name</label>
-              <input
-                type="text"
-                value={commentForm.name}
-                onChange={e => setCommentForm(f => ({ ...f, name: e.target.value }))}
-                placeholder="John Doe"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label>Comment</label>
-              <textarea
-                value={commentForm.content}
-                onChange={e => setCommentForm(f => ({ ...f, content: e.target.value }))}
-                placeholder="Share your thoughts..."
-                required
-              />
-            </div>
-            <button type="submit" className="btn btn-primary" disabled={submitting}>
-              {submitting ? 'Posting...' : 'Post Comment'}
-            </button>
-          </form>
-
-          <div className="comment-list">
-            {comments.map(comment => (
-              <div key={comment.id} className="comment">
-                <div className="comment-header">
-                  <span className="comment-author">{comment.author_name}</span>
-                  <span className="comment-time">{formatDate(comment.created_at)}</span>
-                </div>
-                <p className="comment-content">{comment.content}</p>
-              </div>
-            ))}
+        <section style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '2px solid var(--text)' }}>
+          <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Discussion</h3>
+          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem', textAlign: 'center', color: 'var(--text-3)', fontFamily: "'Syne', sans-serif", fontSize: '0.82rem' }}>
+            Comments powered by Supabase — connect your database to enable discussion.
           </div>
         </section>
       </article>
