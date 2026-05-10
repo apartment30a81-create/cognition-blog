@@ -857,7 +857,123 @@ export default function PostPage(_props: PageProps) {
 
         <section style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '2px solid var(--text)' }}>
           <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: '0.8rem', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '1.5rem' }}>Discussion</h3>
-          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem', textAlign: 'center', color: 'var(--text-3)', fontFamily: "'Syne', sans-serif", fontSize: '0.82rem' }}>
+          <div style={{ background: 'var(--surface)', border: '1px solid var(--border)', borderRadius: '8px', padding: '1.5rem', marginBottom: '2rem', textAlign: 'center', color: 'var(--text-3)', fontFamily: "'Syne', sans-serif",
+  'next-gen-reasoning-models-2026': {
+    id: '26',
+    title: "The Dawn of Next-Gen Reasoning Models in 2026",
+    slug: 'next-gen-reasoning-models-2026',
+    excerpt: "How the latest reasoning-focused models are solving complex math, coding, and logical tasks without hallucinations.",
+    cover_image: 'https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800&q=80',
+    category: 'Language',
+    tags: ['Reasoning', 'LLM', 'Innovation', 'AI Models'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p class="lead">The landscape of AI benchmarks shifted dramatically in 2026. Reasoning-focused models are now solving graduate-level mathematics, competitive programming challenges, and multi-step logical puzzles at accuracy rates that were once thought impossible before 2030.</p>
+
+<h2>The Architecture of Reasoning</h2>
+<p>Unlike traditional language models that rely heavily on statistical pattern matching across billions of tokens, next-generation reasoning models integrate structured symbolic solvers, chain-of-thought verifiers, and Monte Carlo tree search into their inference pipelines. The result is a model that can "think through" a problem rather than simply retrieve the most likely next token.</p>
+<p>This architectural shift addresses the long-standing hallucination problem. When a model can verify its own intermediate steps against a symbolic solver, errors are caught and corrected before they propagate to the final output.</p>
+
+<h2>Impact on Enterprise Adoption</h2>
+<p>Sectors that previously prohibited LLM deployment for critical tasks—legal document analysis, medical diagnosis support, financial risk calculation—are now running pilot programs. The reduction in error rates has crossed a crucial threshold for regulatory acceptance.</p>
+<p>Early enterprise deployments in investment banking show that reasoning models can now match junior analyst accuracy on complex DCF (Discounted Cash Flow) modeling while completing tasks in one-tenth the time.</p>
+
+<h2>What This Means for Developers</h2>
+<p>The programming model is changing. Prompt engineering for reasoning tasks now looks more like configuring a verification pipeline than writing a prompt. Developers specify constraints, define verification functions, and let the model explore the solution space within those bounds.</p>`
+  },
+  'on-device-ai-100b-parameters-locally': {
+    id: '27',
+    title: "On-Device AI: Running 100B Parameter Models Locally",
+    slug: 'on-device-ai-100b-parameters-locally',
+    excerpt: "Advances in quantization and edge silicon mean true state-of-the-art AI no longer requires a cloud API.",
+    cover_image: 'https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=800&q=80',
+    category: 'Engineering',
+    tags: ['Edge AI', 'Hardware', 'Quantization', 'Privacy'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p class="lead">The cloud AI dependency is ending. In 2026, running a 100-billion parameter model on a laptop is not just possible—it's practical.</p>
+
+<h2>The Technology Behind Local AI</h2>
+<p>Three converging advances made this possible. First, extreme quantization techniques like Q4_K_M and Q5_K_S reduced model weights to 2-3 bits per parameter without meaningful accuracy loss. Second, dedicated neural processing units (NPUs) with 60-100 TOPS performance became standard in consumer laptops. Third, architectural innovations like grouped query attention and sliding window attention dramatically reduced memory bandwidth requirements.</p>
+<p>The result is that a MacBook Pro with M4 Pro chip can now run a fine-tuned 100B model at 30 tokens per second—fast enough for real-time conversation.</p>
+
+<h2>Privacy as a First-Class Feature</h2>
+<p>For healthcare, legal, and defense applications, data privacy isn't optional. Local AI solves this fundamentally. A doctor's practice can run a specialized medical reasoning model entirely within their clinic network. Sensitive client data never leaves the building.</p>
+<p>This has unlocked AI adoption in segments that were previously blocked by compliance concerns.</p>
+
+<h2>The Voice Interface Revolution</h2>
+<p>Sub-100ms local inference enables entirely natural voice conversations. The psychological barrier of waiting for "loading" disappears. Voice becomes the default interface for AI assistance, the way it was always imagined in science fiction.</p>`
+  },
+  'agentic-engineering-teams-ai-reviews': {
+    id: '28',
+    title: "Agentic Engineering Teams: When AI Writes and Reviews",
+    slug: 'agentic-engineering-teams-ai-reviews',
+    excerpt: "Software engineering is transitioning from writing code to managing fleets of specialized AI developer agents.",
+    cover_image: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?w=800&q=80',
+    category: 'Engineering',
+    tags: ['AI Agents', 'Software Engineering', 'Automation', 'DevOps'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p class="lead">The AI coding assistant is dead. Long live the AI developer team.</p>
+
+<h2>The New Development Workflow</h2>
+<p>In 2026, a software project starts with a human principal engineer writing a detailed SPEC.md. From there, specialized AI agents take over. A Research Agent reads the relevant literature and existing code. An Architect Agent proposes the system design. An Implementer Agent writes the code.</p>
+<p>The critical difference from previous years is that these agents don't just generate code—they negotiate, revise, and improve it through multi-agent debate. The Architect Agent critiques the Implementer's choices. A Security Agent looks for vulnerabilities. A Performance Agent runs profiling and suggests optimizations.</p>
+
+<h2>Agent-to-Agent Code Review</h2>
+<p>The PR review process is fully automated. When an Implementer Agent submits a change, a swarm of specialist agents systematically tear it apart: Does it follow project conventions? Are there security flaws? Will it scale? Does the test coverage meet standards?</p>
+<p>Only after this automated review cycle passes does a human engineer see the PR—and by that point, it's typically in excellent shape.</p>
+
+<h2>What Humans Do</h2>
+<p>Human engineers focus on ambiguous requirements, edge cases that require real-world judgment, and architectural decisions at the system level. Code review transforms from hunting bugs to rubber-stamping agent work—a strange inversion that many engineers are still adapting to.</p>`
+  },
+  'eu-ai-act-fallout-2026-compliance': {
+    id: '29',
+    title: "The 2026 EU AI Act Fallout: Regulatory Reality",
+    slug: 'eu-ai-act-fallout-2026-compliance',
+    excerpt: "As the EU AI Act enforcement phases in, we examine how open-source and proprietary labs are navigating the legal maze.",
+    cover_image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80',
+    category: 'Ethics',
+    tags: ['Regulation', 'EU AI Act', 'Policy', 'Open Source'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p class="lead">The EU AI Act is no longer theoretical. With full enforcement now active, the regulatory landscape is reshaping which AI systems get built, how they're deployed, and who bears liability.</p>
+
+<h2>What High-Risk Actually Means</h2>
+<p>The Act's "high-risk" classification covers a much broader swath of AI than originally anticipated. Enterprise HR screening tools, critical infrastructure management systems, medical diagnostic AI, and educational assessment software all fall under high-risk designation. Each requires extensive documentation, bias testing, human oversight mechanisms, and ongoing monitoring.</p>
+<p>Non-compliance fines reach 3% of global revenue or €15 million—whichever is higher. Most multinationals have chosen compliance over the risk.</p>
+
+<h2>The Open-Source Paradox</h2>
+<p>Open-source foundational models occupy a strange legal position. The models themselves enjoy some regulatory exemptions as general-purpose technology. But once a company takes that open-source model and deploys it in a high-risk application, full liability attaches to that deployment.</p>
+<p>This has created a boom in "safe harbor" legal structures where open-source projects form subsidiaries specifically designed to absorb liability from downstream commercial use.</p>
+
+<h2>The Global Splinternet</h2>
+<p>EU compliance requirements are incompatible with minimal-oversight approaches dominant in the US and Asia. The result is an emerging "AI splinternet"—different models, different capabilities, and different prices for different regulatory jurisdictions. A model legal in Singapore may be unavailable in Frankfurt.</p>`
+  },
+  'quantum-machine-learning-practical-hybrids': {
+    id: '30',
+    title: "Quantum Machine Learning: The First Practical Hybrids",
+    slug: 'quantum-machine-learning-practical-hybrids',
+    excerpt: "Quantum computing and neural networks are finally merging to solve protein folding and complex logistics.",
+    cover_image: 'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=800&q=80',
+    category: 'Vision',
+    tags: ['Quantum', 'Research', 'Hybrid Models', 'Future'],
+    published: true,
+    created_at: '2026-05-10T12:00:00Z',
+    content: `<p class="lead">Quantum computing in AI spent years in the wilderness of theoretical promise. In 2026, the first practical hybrid quantum-classical ML systems are delivering real-world results.</p>
+
+<h2>Why Now</h2>
+<p>The breakthrough wasn't a single innovation—it was the convergence of three developments. First, quantum processing units (QPUs) reached 1,000+ stable qubits with error rates below the threshold needed for useful computation. Second, hybrid quantum-classical training algorithms matured to the point where they could leverage QPUs for specific subroutines while using classical hardware for the bulk of computation. Third, LLMs emerged as ideal orchestration layers that could translate human requests into quantum circuits and interpret results.</p>
+<p>The architecture that works: LLMs handle preprocessing, prompt interpretation, and output formatting. QPUs handle the high-dimensional optimization kernels that classical hardware struggles with—protein conformation search, portfolio optimization, traffic routing.</p>
+
+<h2>Real-World Applications</h2>
+<p>Pharmaceutical companies are using hybrid QML to simulate protein-ligand interactions at fidelities impossible with classical computing. Battery material discovery timelines have compressed from decades to years. Logistics companies are solving vehicle routing problems that classical algorithms can only approximate.</p>
+<p>These aren't laboratory demonstrations—they're production systems delivering commercial value.</p>
+
+<h2>The Road Ahead</h2>
+<p>True quantum advantage in ML will likely require fault-tolerant quantum computers with millions of physical qubits—a decade away by most estimates. But the intermediate hybrid era is already here, and it's delivering genuine value in specific domains.</p>`
+  },
+ fontSize: '0.82rem' }}>
             Comments powered by Supabase — connect your database to enable discussion.
           </div>
         </section>
